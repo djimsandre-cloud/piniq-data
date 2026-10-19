@@ -1,0 +1,20 @@
+# Toutes les heures : PinIQ répond-il ? Sinon, alerte ntfy
+name: Gardien de PinIQ
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+jobs:
+  gardien:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Vérifier l'appli
+        run: |
+          ok() { curl -fsS -m 20 "https://caddybook-957f3.web.app/?gardien=$(date +%s)" | grep -q "PinIQ"; }
+          if ok; then echo "PinIQ répond"; exit 0; fi
+          sleep 90
+          if ok; then echo "PinIQ répond (au 2e essai)"; exit 0; fi
+          curl -s -H "Content-Type: application/json" -d '{"topic":"caddybook-d4535629da","title":"⚠️ PinIQ ne répond plus","message":"La page caddybook-957f3.web.app ne s'"'"'affiche pas depuis 2 minutes. Le gardien revérifie toutes les heures.","tags":["rotating_light"],"priority":5}' https://ntfy.sh/
+          echo "::error::PinIQ ne répond pas"
+          exit 1
