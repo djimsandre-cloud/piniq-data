@@ -3,6 +3,7 @@
 // → agendas Google publics et fichiers iCal → compétitions à venir dans data/compets.json
 // © D'jims ANDRÉ · Tous droits réservés
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { enFrance } from "./france.mjs";
 
 const UA = "PinIQ-calendriers/1.0 (robot hebdomadaire ; contact : djims.andre@gmail.com)";
 const NTFY = process.env.NTFY_TOPIC || "caddybook-d4535629da";
@@ -18,13 +19,6 @@ async function get(url, ms = 12000){
     const t = await r.text(); return t.length > 3e6 ? t.slice(0, 3e6) : t; }
   catch(e){ return null; } finally { clearTimeout(to); }
 }
-
-// Contour simplifié de la France métropolitaine et de la Corse (lat, lon)
-const FR = [[51.09,2.54],[50.81,2.95],[50.75,3.3],[50.5,3.7],[50.33,4.15],[49.97,4.15],[50.12,4.85],[49.8,4.9],[49.55,5.47],[49.47,6.37],[49.17,6.75],[49.21,7.37],[49.05,8.2],[48.55,7.8],[47.9,7.58],[47.59,7.59],[47.43,6.95],[47.03,6.7],[46.42,6.1],[46.26,5.98],[46.13,6.2],[46.4,6.55],[46.45,6.8],[46.16,6.86],[45.83,7.03],[45.14,7.13],[44.85,7.0],[44.13,7.71],[43.79,7.53],[43.5,7.1],[43.0,6.1],[43.2,5.0],[43.35,4.3],[43.15,3.4],[42.43,3.2],[42.42,2.5],[42.55,1.75],[42.75,0.6],[42.8,-0.3],[43.05,-1.0],[43.37,-1.8],[44.5,-1.35],[46.2,-1.65],[47.2,-2.6],[47.7,-4.0],[48.0,-4.9],[48.7,-4.85],[48.9,-3.0],[48.7,-1.6],[49.78,-2.0],[49.75,-1.2],[49.4,-1.0],[49.55,0.1],[50.05,1.4],[50.95,1.55]];
-const CORSE = [[43.05,9.35],[42.6,9.6],[41.9,9.45],[41.35,9.25],[41.5,8.75],[42.25,8.5],[42.75,9.15]];
-function dedans(lat, lon, poly){ let ok = false; for (let i = 0, j = poly.length - 1; i < poly.length; j = i++){ const [ai, bi] = poly[i], [aj, bj] = poly[j]; if ((bi > lon) !== (bj > lon) && lat < (aj - ai) * (lon - bi) / (bj - bi) + ai) ok = !ok; } return ok; }
-const ETRANGER = /\.(de|ch|it|es|be|nl|lu|at|uk|cat|ad|pt|ie)$/i;
-const enFrance = g => (dedans(g.ll[0], g.ll[1], FR) || dedans(g.ll[0], g.ll[1], CORSE)) && !ETRANGER.test(new URL(g.site).host);
 
 // 1. Golfs français avec un site web
 async function golfs(){
@@ -77,11 +71,32 @@ function subPages(html, base){
   }
   return out.slice(0, 4);
 }
+// Carte de score : lien dont le texte ou l'adresse parle de « carte de score » / « scorecard » (PDF, image ou page)
+const CARTE = /carte[\s_%20-]*(de[\s_%20-]*)?scores?|score[\s_%20-]*card|scorecard/i;
+function carteLink(html, base){
+  let best = null;
+  for (const m of html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]{0,200}?)<\/a>/gi)){
+    const u = absUrl(m[1], base), txt = (m[2] || "").replace(/<[^>]+>/g, " ");
+    if (!u || !/^https?:/i.test(u) || !(CARTE.test(txt) || CARTE.test(decodeURIComponent(u).replace(/[-_]/g, " ")))) continue;
+    if (/\.(pdf|jpe?g|png|webp)(\?|$)/i.test(u)) return u; if (!best) best = u;
+  }
+  return best;
+}
+function parcoursPages(html, base){
+  const host = new URL(base).host, out = [];
+  for (const m of html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]{0,120}?)<\/a>/gi)){
+    const u = absUrl(m[1], base), txt = (m[2] || "").replace(/<[^>]+>/g, " ").toLowerCase();
+    if (!u || new URL(u).host !== host || /\.(pdf|jpe?g|png|gif|zip|docx?)$/i.test(u)) continue;
+    if (/parcours|le golf\b|trou par trou|tarifs? et parcours/.test(u.toLowerCase() + " " + txt) && !out.includes(u)) out.push(u);
+  }
+  return out.slice(0, 2);
+}
 async function findCals(g){
-  const home = await get(g.site); if (!home) return { g: [], i: [] };
-  let G = gcalIds(home), I = icsLinks(home, g.site);
-  for (const p of subPages(home, g.site)){ await sleep(400); const h = await get(p); if (!h) continue; G = G.concat(gcalIds(h)); I = I.concat(icsLinks(h, p)); }
-  return { g: [...new Set(G)], i: [...new Set(I)].slice(0, 3) };
+  const home = await get(g.site); if (!home) return { g: [], i: [], carte: null };
+  let G = gcalIds(home), I = icsLinks(home, g.site), carte = carteLink(home, g.site);
+  for (const p of subPages(home, g.site)){ await sleep(400); const h = await get(p); if (!h) continue; G = G.concat(gcalIds(h)); I = I.concat(icsLinks(h, p)); carte = carte || carteLink(h, p); }
+  if (!carte) for (const p of parcoursPages(home, g.site)){ await sleep(400); const h = await get(p); if (!h) continue; carte = carteLink(h, p); if (carte) break; }
+  return { g: [...new Set(G)], i: [...new Set(I)].slice(0, 3), carte };
 }
 
 // 3. Lecture iCal (agendas Google publics et fichiers .ics)
@@ -110,9 +125,10 @@ async function main(){
   const known = new Set((prev.clubs || []).map(c => c.site));
   const G = (await golfs()).slice(0, MAX_GOLFS), clubs = []; let checked = 0;
   console.log(`${G.length} golfs avec un site web`);
-  const queue = [...G], workers = Array.from({ length: 4 }, async () => {
+  const cartes = [], queue = [...G], workers = Array.from({ length: 4 }, async () => {
     while (queue.length){ const g = queue.shift(); checked++;
-      try { const f = await findCals(g); if (!f.g.length && !f.i.length) continue;
+      try { const f = await findCals(g); if (f.carte) cartes.push([g.name, g.ll[0], g.ll[1], f.carte]);
+        if (!f.g.length && !f.i.length) continue;
         const cals = [], events = [];
         for (const id of f.g){ const ev = await readCal(`${GCAL}/calendar/ical/${encodeURIComponent(id)}/public/basic.ics`); if (ev){ cals.push(id); events.push(...ev); } }
         for (const u of f.i){ const ev = await readCal(u); if (ev){ cals.push(u); events.push(...ev); } }
@@ -125,6 +141,8 @@ async function main(){
   clubs.sort((a, b) => a.name.localeCompare(b.name, "fr"));
   await mkdir("data", { recursive: true });
   await writeFile(OUT, JSON.stringify({ updated: new Date().toISOString(), checked, clubs }));
+  cartes.sort((a, b) => a[0].localeCompare(b[0], "fr")); await writeFile("data/cartes.json", JSON.stringify({ updated: new Date().toISOString(), cartes }));
+  console.log(`::notice::${cartes.length} cartes de score trouvées sur les sites des clubs`);
   const fresh = clubs.filter(c => !known.has(c.site)), nev = clubs.reduce((a, c) => a + c.events.length, 0);
   console.log(`::notice::${G.length} golfs avec un site · ${clubs.length} publient un calendrier · ${nev} compétitions à venir · ${fresh.length} nouveaux`);
   if (process.env.NO_NTFY) return;

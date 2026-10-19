@@ -1,0 +1,25 @@
+# Chaque lundi, avant le bilan : plans des golfs de France depuis OpenStreetMap
+name: Plans des golfs
+on:
+  schedule:
+    - cron: "7 1 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  plans:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: node plans.mjs
+      - run: |
+          git config user.name "PinIQ robot"
+          git config user.email "robot@users.noreply.github.com"
+          git add data/ plans/
+          git diff --cached --quiet || git commit -m "Plans des golfs"
+          git pull --rebase
+          git push
