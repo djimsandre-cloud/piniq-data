@@ -22,18 +22,27 @@ async function get(url, ms = 12000){
 // 1. Golfs français avec un site web
 async function golfs(){
   if (process.env.TEST_GOLFS) return JSON.parse(await readFile(process.env.TEST_GOLFS, "utf8"));
-  const q = `[out:json][timeout:240];area["ISO3166-1"="FR"][admin_level=2]->.fr;(way["leisure"="golf_course"](area.fr);relation["leisure"="golf_course"](area.fr););out center tags;`;
-  for (const ep of ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]){
-    try { const r = await fetch(ep, { method: "POST", body: "data=" + encodeURIComponent(q), headers: { "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded" } });
-      if (!r.ok) continue; const j = await r.json(), seen = new Set(), out = [];
+  // France métropolitaine (cadre géographique : plus léger pour OpenStreetMap qu'une recherche par frontière)
+  const q = `[out:json][timeout:180][bbox:41.3,-5.3,51.15,9.7];(way["leisure"="golf_course"];relation["leisure"="golf_course"];);out center tags;`;
+  const EPS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter"];
+  for (let tour = 0; tour < 2; tour++) for (const ep of EPS){
+    const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 200000);
+    try { const r = await fetch(ep, { method: "POST", body: "data=" + encodeURIComponent(q), headers: { "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded" }, signal: ctl.signal });
+      if (!r.ok){ console.log(`::warning::${new URL(ep).host} : HTTP ${r.status}`); await sleep(15000); continue; }
+      const j = await r.json(), seen = new Set(), out = [];
       for (const e of j.elements || []){ const t = e.tags || {}, c = e.center, web = t.website || t["contact:website"] || t.url;
         if (!c || !web || !t.name || /mini.?golf|foot.?golf|disc.?golf|practice/i.test(t.name)) continue;
         let host; try { host = new URL(/^https?:/i.test(web) ? web : "https://" + web).host; } catch(e){ continue; }
         if (seen.has(host)) continue; seen.add(host);
         out.push({ name: t.name, ll: [+c.lat.toFixed(5), +c.lon.toFixed(5)], site: /^https?:/i.test(web) ? web : "https://" + web }); }
+      if (out.length < 50){ console.log(`::warning::${new URL(ep).host} : seulement ${out.length} golfs`); continue; }
+      await mkdir("data", { recursive: true }); await writeFile("data/golfs.json", JSON.stringify(out));
       return out;
-    } catch(e){}
+    } catch(e){ console.log(`::warning::${new URL(ep).host} : ${e.name === "AbortError" ? "trop long" : e.message}`); }
+    finally { clearTimeout(to); }
   }
+  // OpenStreetMap indisponible : on reprend la liste de la semaine précédente
+  try { const old = JSON.parse(await readFile("data/golfs.json", "utf8")); if (old.length){ console.log(`::warning::OpenStreetMap indisponible, liste précédente (${old.length} golfs)`); return old; } } catch(e){}
   throw new Error("OpenStreetMap ne répond pas");
 }
 
@@ -109,9 +118,9 @@ async function main(){
   await mkdir("data", { recursive: true });
   await writeFile(OUT, JSON.stringify({ updated: new Date().toISOString(), checked, clubs }));
   const fresh = clubs.filter(c => !known.has(c.site)), nev = clubs.reduce((a, c) => a + c.events.length, 0);
-  console.log(`${clubs.length} golfs publient un calendrier · ${nev} compétitions à venir · ${fresh.length} nouveaux`);
+  console.log(`::notice::${G.length} golfs avec un site · ${clubs.length} publient un calendrier · ${nev} compétitions à venir · ${fresh.length} nouveaux`);
   if (process.env.NO_NTFY) return;
   const msg = `${clubs.length} golfs publient leur calendrier · ${nev} compétitions à venir${fresh.length ? `\nNouveaux : ${fresh.slice(0, 8).map(c => c.name).join(", ")}${fresh.length > 8 ? "…" : ""}` : ""}`;
   try { await fetch("https://ntfy.sh/", { method: "POST", body: JSON.stringify({ topic: NTFY, title: "Calendriers des golfs", message: msg, tags: ["calendar"] }) }); } catch(e){}
 }
-main().catch(e => { console.error(e.message || e); process.exit(1); });
+main().catch(e => { console.log(`::error::${e.message || e}`); process.exit(1); });
