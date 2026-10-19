@@ -89,11 +89,13 @@ async function main(){
 
   // 4. Liste et nouveautés (golfs devenus jouables depuis la semaine dernière)
   const first = !(prev.golfs || []).length;
-  const news = first ? [] : golfs.filter(g => g.ready && (!before.get(g.id) || (before.get(g.id)[3] || 0) < g.ready)).map(g => `${g.name}${g.ready === 9 ? " (9 trous)" : ""}`);
+  // nouveautés datées, gardées 8 jours (le robot passe chaque nuit, le bilan du lundi reprend la semaine)
+  const news = (prev.news || []).filter(x => Array.isArray(x) && NOW - x[1] < 8 * DAY);
+  if (!first) golfs.filter(g => g.ready && (!before.get(g.id) || (before.get(g.id)[3] || 0) < g.ready)).forEach(g => news.push([`${g.name}${g.ready === 9 ? " (9 trous)" : ""}`, NOW]));
   const out = { updated: new Date(NOW).toISOString(), news, sigs,
     golfs: golfs.sort((a, b) => a.name.localeCompare(b.name, "fr")).map(g => [g.name, g.ll[0], g.ll[1], g.ready, g.mapped, sigs[g.id] ? g.id : ""]) };
   await mkdir("data", { recursive: true });
   await writeFile("data/plans.json", JSON.stringify(out));
-  console.log(`::notice::${golfs.length} golfs · ${withHoles.length} cartographiés · ${done} plans mis à jour${fail ? ` · ${fail} échecs` : ""}${news.length ? ` · nouveaux : ${news.slice(0, 10).join(", ")}` : ""}`);
+  console.log(`::notice::${golfs.length} golfs · ${withHoles.length} cartographiés · ${done} plans mis à jour${fail ? ` · ${fail} échecs` : ""}${news.length ? ` · nouveaux : ${news.filter(x => x[1] === NOW).map(x => x[0]).slice(0, 10).join(", ")}` : ""}`);
 }
 main().catch(e => { console.log(`::error::${e.message || e}`); process.exit(1); });

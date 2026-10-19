@@ -1,8 +1,8 @@
-# Chaque lundi, avant le bilan : plans des golfs de France depuis OpenStreetMap
+# Chaque nuit : plans des golfs de France depuis OpenStreetMap (seuls les golfs nouveaux ou modifiés sont relus)
 name: Plans des golfs
 on:
   schedule:
-    - cron: "7 1 * * 1"
+    - cron: "7 1 * * *"
   workflow_dispatch:
 permissions:
   contents: write
