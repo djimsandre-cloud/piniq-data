@@ -5,7 +5,7 @@
 // © D'jims ANDRÉ · Tous droits réservés
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { enFranceLL } from "./france.mjs";
+import { enFranceLL, enFrance } from "./france.mjs";
 
 const UA = "PinIQ-plans/1.0 (robot hebdomadaire ; contact : djims.andre@gmail.com)";
 const EPS = (process.env.OVERPASS || "https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter,https://overpass.private.coffee/api/interpreter,https://maps.mail.ru/osm/tools/overpass/api/interpreter").split(",");
@@ -57,8 +57,13 @@ async function main(){
     if (!enFranceLL(c.lat, c.lon)) continue;
     const ll = [+c.lat.toFixed(5), +c.lon.toFixed(5)];
     if (golfs.some(g => km(g.ll, ll) < 0.4 && g.name === t.name)) continue;
-    golfs.push({ name: t.name, ll, id: idOf(ll), refs: new Set(), sig: [] }); }
+    const web = t.website || t["contact:website"] || t.url || ""; let site = "";
+    if (web) try { site = new URL(/^https?:/i.test(web) ? web : "https://" + web).href; } catch(e){}
+    golfs.push({ name: t.name, ll, id: idOf(ll), site, refs: new Set(), sig: [] }); }
   console.log(`${golfs.length} golfs en France`);
+  // liste de secours pour le robot des calendriers (golfs de France ayant un site web)
+  { const hosts = new Set(), L = golfs.filter(g => g.site && enFrance(g) && !hosts.has(new URL(g.site).host) && hosts.add(new URL(g.site).host)).map(g => ({ name: g.name, ll: g.ll, site: g.site }));
+    if (L.length > 100){ await mkdir("data", { recursive: true }); await writeFile("data/golfs.json", JSON.stringify(L)); } }
 
   // 2. Trous cartographiés, rattachés au golf le plus proche (2,5 km au plus)
   console.log("Trous cartographiés…");
