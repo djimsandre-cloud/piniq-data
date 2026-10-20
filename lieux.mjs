@@ -36,10 +36,13 @@ async function main(){
   let idx = { tiles: {} }; try { idx = JSON.parse(await readFile("lieux/index.json", "utf8")); } catch(e){}
   // les carreaux les plus anciens d'abord (si le temps manque, la suite passe la semaine suivante)
   tiles.sort((a, b) => ((idx.tiles[a.join("_")] || {}).t || 0) - ((idx.tiles[b.join("_")] || {}).t || 0));
+  // passage toutes les 6 heures : on ne relit que les carreaux de plus de 6 jours (rattrapage rapide, puis une fois par semaine)
+  const todo = tiles.filter(([la, lo]) => Date.now() - ((idx.tiles[`${la}_${lo}`] || {}).t || 0) > 6 * 864e5);
+  if (!todo.length){ console.log("::notice::Tous les carreaux sont à jour"); return; }
   await mkdir("lieux", { recursive: true });
   let done = 0, total = 0;
-  for (const [la, lo] of tiles){
-    if (Date.now() > T_END){ console.log(`::notice::${tiles.length - done} carreaux reportés au prochain passage`); break; }
+  for (const [la, lo] of todo){
+    if (Date.now() > T_END){ console.log(`::notice::${todo.length - done} carreaux reportés au prochain passage`); break; }
     const bb = `${la},${lo},${la + 1},${lo + 1}`;
     const q = `[out:json][timeout:120];(nwr["amenity"~"^(cinema|theatre|nightclub|music_venue|events_venue|arts_centre|bar|pub)$"](${bb});nwr["leisure"~"^(bowling_alley|dance)$"](${bb}););out center tags;`;
     try {

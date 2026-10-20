@@ -1,8 +1,8 @@
-# Chaque dimanche soir : lieux de sortie de toute la France (OpenStreetMap) pour An Nou Alé
+# Toutes les 6 heures (seuls les carreaux de plus de 6 jours sont relus) : lieux de sortie de toute la France (OpenStreetMap) pour An Nou Alé
 name: Lieux de sortie
 on:
   schedule:
-    - cron: "11 22 * * 0"
+    - cron: "11 */6 * * *"
   workflow_dispatch:
 permissions:
   contents: write
