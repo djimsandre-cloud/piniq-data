@@ -1,5 +1,5 @@
-# Toutes les heures : PinIQ répond-il ? Sinon, alerte ntfy
-name: Gardien de PinIQ
+# Toutes les heures : PinIQ et Popote & Co répondent-ils ? Sinon, alerte ntfy (chaque appli sur son propre sujet)
+name: Gardien des applis
 on:
   schedule:
     - cron: "23 * * * *"
@@ -7,14 +7,20 @@ on:
 jobs:
   gardien:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 6
     steps:
-      - name: Vérifier l'appli
+      - name: Vérifier les applis
         run: |
-          ok() { curl -fsS -m 20 "https://caddybook-957f3.web.app/?gardien=$(date +%s)" | grep -q "PinIQ"; }
-          if ok; then echo "PinIQ répond"; exit 0; fi
-          sleep 90
-          if ok; then echo "PinIQ répond (au 2e essai)"; exit 0; fi
-          curl -s -H "Content-Type: application/json" -d '{"topic":"caddybook-d4535629da","title":"⚠️ PinIQ ne répond plus","message":"La page caddybook-957f3.web.app ne s'"'"'affiche pas depuis 2 minutes. Le gardien revérifie toutes les heures.","tags":["rotating_light"],"priority":5}' https://ntfy.sh/
-          echo "::error::PinIQ ne répond pas"
-          exit 1
+          ok() { curl -fsS -m 20 "$1?gardien=$(date +%s)" | grep -q "$2"; }
+          alerte() { curl -s -H "Content-Type: application/json" -d "{\"topic\":\"$1\",\"title\":\"⚠️ $2 ne répond plus\",\"message\":\"La page $3 ne s'affiche pas depuis 2 minutes. Le gardien revérifie toutes les heures.\",\"tags\":[\"rotating_light\"],\"priority\":5}" https://ntfy.sh/; }
+          echec=0
+          while IFS='|' read -r nom url mot sujet; do
+            if ok "$url" "$mot"; then echo "$nom répond"; continue; fi
+            sleep 90
+            if ok "$url" "$mot"; then echo "$nom répond (2e essai)"; continue; fi
+            alerte "$sujet" "$nom" "$url"; echo "::error::$nom ne répond pas"; echec=1
+          done <<'LISTE'
+          PinIQ|https://caddybook-957f3.web.app/|PinIQ|caddybook-d4535629da
+          Popote & Co|https://popote-2026.web.app/|Popote|popote-co-acece3a890b5
+          LISTE
+          exit $echec
