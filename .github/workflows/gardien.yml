@@ -1,4 +1,4 @@
-# Toutes les heures : PinIQ, Popote & Co, An Nou Alé et KrediCash répondent-ils ? Sinon, alerte ntfy (chaque appli sur son propre sujet)
+# Toutes les heures : PinIQ, Popote & Co, An Nou Alé, KrediCash et BudSnap répondent-ils ? Sinon, alerte ntfy (chaque appli sur son propre sujet)
 name: Gardien des applis
 on:
   schedule:
@@ -24,5 +24,6 @@ jobs:
           Popote & Co|https://popote-2026.web.app/|Popote|popote-co-acece3a890b5
           An Nou Alé|https://an-nou-ale-93b46.web.app/|An Nou|caddybook-d4535629da
           KrediCash|https://kredicash.web.app/|KrediCash|caddybook-d4535629da
+          BudSnap|https://budegetpilot.web.app/|BudSnap|caddybook-d4535629da
           LISTE
           exit $echec
