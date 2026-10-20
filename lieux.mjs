@@ -48,7 +48,7 @@ async function main(){
         if (!t.name || lat == null || !enFranceLL(lat, lon) || tileOf(lat, lon) !== `${la}_${lo}`) continue;
         const ty = TYPES[t.amenity] || TYPES[t.leisure]; if (!ty) continue;
         const k = ty + t.name + r5(lat).toFixed(3); if (seen.has(k)) continue; seen.add(k);
-        out.push([e.type[0] + e.id, t.name, ty, r5(lat), r5(lon), t["addr:city"] || "",
+        out.push([e.type + e.id, t.name, ty, r5(lat), r5(lon), t["addr:city"] || "",
           [t["addr:housenumber"], t["addr:street"], t["addr:postcode"]].filter(Boolean).join(" "),
           t.website || t["contact:website"] || "", t.phone || t["contact:phone"] || "", t.opening_hours || ""]); }
       await writeFile(`lieux/${la}_${lo}.json`, JSON.stringify(out));
