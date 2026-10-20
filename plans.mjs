@@ -82,7 +82,7 @@ async function main(){
     .sort((a, b) => (sigs[a.id] ? 1 : 0) - (sigs[b.id] ? 1 : 0) || b.mapped - a.mapped);
   let done = 0, fail = 0;
   for (const g of todo){
-    if (done >= MAX_FETCH || Date.now() > T_END){ console.log(`::notice::${todo.length - done - fail} plans reportés à la semaine prochaine`); break; }
+    if (done >= MAX_FETCH || Date.now() > T_END){ console.log(`::notice::${todo.length - done - fail} plans reportés au prochain passage`); break; }
     try { const p = await plan(g.ll[0], g.ll[1]); if (!Object.keys(p.holes).length) throw new Error("aucun trou");
       await writeFile(`plans/${g.id}.json`, JSON.stringify({ name: g.name, ll: g.ll, t: NOW, ...p }));
       sigs[g.id] = { sig: g.sig, t: NOW }; done++;
