@@ -1,4 +1,4 @@
-# Toutes les heures : PinIQ, Popote & Co, An Nou Alé, KrediCash, BudSnap, Séré'l byen et SmartCode répondent-ils ? Sinon, alerte ntfy (chaque appli sur son propre sujet)
+# Toutes les heures : PinIQ, Popote & Co, An Nou Alé, KrediCash, BudSnap, Séré'l byen, SmartCode et Salle de jeux répondent-ils ? Sinon, alerte ntfy (chaque appli sur son propre sujet)
 name: Gardien des applis
 on:
   schedule:
@@ -27,5 +27,6 @@ jobs:
           BudSnap|https://budegetpilot.web.app/|BudSnap|caddybook-d4535629da
           Séré'l byen|https://serel-byen-2026.web.app/|Séré|caddybook-d4535629da
           SmartCode|https://smartcode-3cf3d.web.app/|SmartCode|caddybook-d4535629da
+          Salle de jeux|https://salle-de-jeux-2026.web.app/|Salle de jeux|caddybook-d4535629da
           LISTE
           exit $echec
