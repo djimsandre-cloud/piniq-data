@@ -60,6 +60,32 @@ function liens(x){
   return [...new Set([...brut.filter(u => u.startsWith("https://")), ...brut.filter(u => u.startsWith("http://")).map(u => "https://" + u.slice(7))])].slice(0, 4);
 }
 
+// Stations de la liste fixe de RadioPam : on vérifie leur lien, et on leur trouve des liens de secours
+const FIXES = [
+  { id: "caraibes", q: "Caraibes", c: "HT", url: "https://stream.zeno.fm/54k0v7x14neuv" }, { id: "scoop", q: "Scoop FM", c: "HT" },
+  { id: "rtvs", q: "Supreme", c: "HT", url: "https://stream.zeno.fm/bdkwbv3rt98uv" }, { id: "intermix", q: "Intermix", c: "HT" }, { id: "rhai", q: "RHAI", c: "HT" },
+  { id: "4veh", q: "4VEH", c: "HT", url: "https://stream.zeno.fm/0zef35h1my5tv" }, { id: "bienetre", q: "Bien Etre", c: "HT", url: "https://stream.zeno.fm/zxg8t9gr3f8uv" },
+  { id: "jamesen", q: "Jamesen", c: "HT", url: "https://stream.zeno.fm/aparrwtkwyzuv" }, { id: "tipiti", q: "Tipiti", c: "HT", url: "https://a8.asurahosting.com:7530/stream" },
+  { id: "inter", q: "France Inter", c: "FR", url: "https://icecast.radiofrance.fr/franceinter-midfi.mp3" }, { id: "info", q: "franceinfo", c: "FR", url: "https://icecast.radiofrance.fr/franceinfo-midfi.mp3" },
+  { id: "fip", q: "FIP", c: "FR", url: "https://icecast.radiofrance.fr/fip-midfi.mp3" }, { id: "culture", q: "France Culture", c: "FR", url: "https://icecast.radiofrance.fr/franceculture-midfi.mp3" },
+  { id: "mouv", q: "Mouv", c: "FR", url: "https://icecast.radiofrance.fr/mouv-midfi.mp3" },
+  { id: "rfi", q: "RFI Monde", c: "FR" }, { id: "rtl", q: "RTL", c: "FR" }, { id: "europe1", q: "Europe 1", c: "FR" }, { id: "nrj", q: "NRJ", c: "FR" },
+  { id: "nostalgie", q: "Nostalgie", c: "FR" }, { id: "skyrock", q: "Skyrock", c: "FR" }, { id: "fun", q: "Fun Radio", c: "FR" },
+];
+async function liensFixes(){
+  const res = {};
+  for (const f of FIXES) {
+    const trouves = await annuaire(`/json/stations/search?name=${encodeURIComponent(f.q)}&countrycode=${f.c}&order=votes&reverse=true&limit=12`);
+    const k = norm(f.q);
+    const proches = trouves.filter(x => norm(x.name).startsWith(k) || norm(x.name) === k || norm(x.name).includes(k)).slice(0, 6);
+    const essais = [...new Set([f.url, ...proches.flatMap(liens)].filter(Boolean))].slice(0, 8);
+    const ok = [];
+    for (const u of essais) { if (ok.length >= 3) break; const r = await joue(u); if (r && !ok.includes(r.url)) ok.push(r.url); }
+    res[f.id] = { urls: ok, principal: f.url ? ok.includes(f.url) : null };
+  }
+  return res;
+}
+
 async function main(){
   // 1. Candidats : pays Haïti, mots-clés haïtiens, langue créole
   const listes = await Promise.all([
@@ -73,7 +99,7 @@ async function main(){
   for (const x of listes.flat()) {
     if (!x || !x.stationuuid || vus.has(x.stationuuid)) continue;
     // Haïti : enregistrée en Haïti, ou radio de la diaspora dont le nom ou les mots-clés sont haïtiens
-    const nom = x.name || "", tags = `${x.tags} ${x.language}`;
+    const nom = x.name || "", tags = String(x.tags || "");             // la langue seule ne suffit pas (radios multilingues)
     const haitienne = /ha[iï]ti|ayiti|krey[oò]l|konpa|kompa|lakay|port.?au.?prince|cap.?ha[iï]tien|jacmel|gona[iï]ves|p[eé]tion.?ville/i.test(nom)
       || /ha[iï]ti|haitian|ayiti|krey[oò]l|cr[eé]ole ha[iï]tien/i.test(tags);
     const intrus = nom.trim().length < 4 || /islam|quran|coran|christmas|no[eë]l/i.test(`${nom} ${x.homepage}`)
@@ -115,8 +141,11 @@ async function main(){
     if (!parNom.has(k) && s.urls.length && !s.urls.some(u => urlsPrises.has(u)) && s.ok && MAINTENANT - Date.parse(s.ok) < GARDE) { parNom.set(k, s); gardees++; }
   }
   const stations = [...parNom.values()].sort((a, b) => b.votes - a.votes || a.n.localeCompare(b.n));
+  const fixes = await liensFixes();
+  const morts = Object.entries(fixes).filter(([, v]) => !v.urls.length).map(([k]) => k);
+  if (morts.length) console.log(`::warning::Stations de la liste sans aucun lien qui joue : ${morts.join(", ")}`);
   mkdirSync("radio", { recursive: true });
-  writeFileSync(SORTIE, JSON.stringify({ maj: new Date(MAINTENANT).toISOString(), testees: testes, stations }, null, 1));
+  writeFileSync(SORTIE, JSON.stringify({ maj: new Date(MAINTENANT).toISOString(), testees: testes, fixes, stations }, null, 1));
   console.log(`::notice::${testes} stations testées · ${bonnes.length} jouent maintenant · ${gardees} gardées (ont joué il y a moins de 3 jours) · ${stations.length} dans la liste`);
 }
 main().catch(e => { console.log(`::error::${e.message || e}`); process.exit(1); });
