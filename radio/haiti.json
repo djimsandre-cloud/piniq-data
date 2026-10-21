@@ -1,12 +1,52 @@
 {
- "maj": "2026-10-21T04:45:08.437Z",
- "testees": 51,
+ "maj": "2026-10-21T04:45:45.675Z",
+ "testees": 339,
  "stations": [
+  {
+   "id": "rb-9be45c80-d20b-4ae5-a6cb-0ac53856086f",
+   "n": "Bombo Radyo Iloilo",
+   "urls": [
+    "https://stream.zenolive.com/gzudz59nz9duv"
+   ],
+   "site": "https://www.bomboradyo.com/",
+   "favicon": "https://www.bomboradyo.com/favicon.ico",
+   "votes": 3071,
+   "tags": [
+    "news"
+   ],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-585600d9-bdc4-4a2e-93c5-2421041cc55c",
+   "n": "Radyo 45lik yeni",
+   "urls": [
+    "https://stream.radyo45lik.com:4545/"
+   ],
+   "site": "https://www.radyo45lik.com/",
+   "favicon": "",
+   "votes": 2389,
+   "tags": [
+    "70s",
+    "80s",
+    "90s",
+    "nostalgic",
+    "retro"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
   {
    "id": "rb-6b0c6c56-9f8e-49dd-a921-23dfe98c4bfc",
    "n": "RADIO BBC NEWS HAITI",
    "urls": [
-    "https://stream-179.surfernetwork.com/hpdayz31vd0uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJocGRheXozMXZkMHV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InZKT1dTNTREUVkyNElnMk85cHUzUEEiLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.POSBZwgESuqAOTgixuqM81LiBcPB2-Is1HifvyGIN9s"
+    "https://stream.zeno.fm/hpdayz31vd0uv"
    ],
    "site": "http://www.bbcnewshaiti.com/",
    "favicon": "https://www.haytinews.com/wp-content/uploads/2023/08/cropped-drapeau-icone-180x180.png",
@@ -19,13 +59,14 @@
    "pays": "HT",
    "codec": "AAC",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-3fb39881-cf61-11e8-a54a-52543be04c81",
    "n": "KONPA MIX RADIO!",
    "urls": [
-    "https://das-edge93-live365-dal05.cdnstream.com/a15951"
+    "https://streaming.live365.com/a15951",
+    "https://das-edge09-live365-dal03.cdnstream.com/a15951"
    ],
    "site": "http://konpamix.com/",
    "favicon": "https://www.ipower.com/images/icons/apple-touch-icons/apple-touch-icon-ipower.png",
@@ -35,14 +76,48 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-14db05f4-b028-40dc-a13f-c53d068d929e",
+   "n": "Habertürk Radyo",
+   "urls": [
+    "https://haberturkradyo.radyotvonline.net/haberturkradyo"
+   ],
+   "site": "https://www.haberturkradyo.com.tr/",
+   "favicon": "https://www.haberturkradyo.com.tr/wp-content/uploads/2017/07/cropped-RADYO_LOGO_Son-180x180.png",
+   "votes": 1547,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-9a7f14e6-2826-47e4-8008-d54af25cf0d8",
+   "n": "baba radyo",
+   "urls": [
+    "https://officialbabaradyo.radyotvonline.net/babaofficial"
+   ],
+   "site": "http://babaradyo.com/",
+   "favicon": "https://www.babaradyo.com/wp-content/uploads/2025/01/cropped-baba-radyo-23-180x180.png",
+   "votes": 1245,
+   "tags": [
+    "classic hits"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-9a2c072e-fda1-4b31-ae42-599fd6eb2902",
    "n": "Caraibes FM",
    "urls": [
-    "https://stream-283.surfernetwork.com/54k0v7x14neuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI1NGswdjd4MTRuZXV2IiwiaG9zdCI6InN0cmVhbS0yODMuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkVjS1VheC1mUklLZVJvQVVHWXhIV2ciLCJpYXQiOjE3OTI1NTc5MDksImV4cCI6MTc5MjU1Nzk2OX0.msryqdv37Ox1L3nPok1IBeqhD6_344PCJ8XU4tpgYTI",
-    "https://stream-283.surfernetwork.com/avr8uenbm1duv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJhdnI4dWVuYm0xZHV2IiwiaG9zdCI6InN0cmVhbS0yODMuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlFIeW5xaW4wUWRpejhsRklRdEx2WFEiLCJpYXQiOjE3OTI1NTc5MDksImV4cCI6MTc5MjU1Nzk2OX0.RFfM8cWi3QSL3D8YSx1X4JqtitL43_puVgxzSEUnTU8"
+    "https://stream.zeno.fm/54k0v7x14neuv",
+    "https://stream-21.zeno.fm/avr8uenbm1duv?zs=HEEdTMZyQ6uSZRff0P3ubg"
    ],
    "site": "https://www.radiotelecaraibes.com/",
    "favicon": "https://www.radiotelecaraibes.com/wp-content/uploads/2024/01/RTVC-Logo_Blanc.png",
@@ -52,13 +127,67 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-d6d9ace0-eb06-4a81-890b-3c24550003d5",
+   "n": "Radyo Şirvan Perwer",
+   "urls": [
+    "https://stream-156.zeno.fm/x0xhw6c6g2zuv?zs=AfL9IRdsQ_qHIebZBo-9GA"
+   ],
+   "site": "https://zeno.com/",
+   "favicon": "null",
+   "votes": 1117,
+   "tags": [
+    "music"
+   ],
+   "ville": "",
+   "pays": "IQ",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-7ab25d55-40ef-4dcc-8e85-1dd99650d830",
+   "n": "Halk Radyo",
+   "urls": [
+    "https://anadolu.liderhost.com.tr:10876/;"
+   ],
+   "site": "",
+   "favicon": "",
+   "votes": 1011,
+   "tags": [
+    "classical"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 104,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-faa8e98f-cb42-4e46-9148-71d2ca6e7537",
+   "n": "Erzincan Cem Radyo",
+   "urls": [
+    "https://erzincan.80.yayin.com.tr/stream"
+   ],
+   "site": "",
+   "favicon": "",
+   "votes": 764,
+   "tags": [
+    "classical"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 96,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-bf6d4aec-27d6-4ae8-845e-00449488d947",
    "n": "Radio Vision 2000 Sud Est 90.9 FM",
    "urls": [
-    "https://stream-179.surfernetwork.com/xmyroy1iu80uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4bXlyb3kxaXU4MHV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjdpZkJrbzRpVG11Y0xETTc3bXVaX2ciLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.0Jk6WJ8PHXbRM-zwZLGKyqqnxivaHDqBfM4_yTljj2o"
+    "https://stream.zeno.fm/xmyroy1iu80uv"
    ],
    "site": "https://www.radiovision2000sudest.com/",
    "favicon": "",
@@ -70,13 +199,13 @@
    "pays": "HT",
    "codec": "AAC",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-784881e9-0835-4f41-8487-d5da19c709b9",
    "n": "Radio St Charles FM",
    "urls": [
-    "https://stream-175.surfernetwork.com/fd9kyc28dchvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJmZDlreWMyOGRjaHZ2IiwiaG9zdCI6InN0cmVhbS0xNzUuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkNETFNVQ1NEUUEycjBwNVdrNWNiUXciLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.gSRNWKzSFfM5Wsit5VZImItKGZOwohLkcHSFwnQWVkI"
+    "https://stream.zeno.fm/fd9kyc28dchvv"
    ],
    "site": "http://lejournaliste.centerblog.net/",
    "favicon": "https://c.sd1.fr/favicon.png",
@@ -86,13 +215,13 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-07990ba9-401a-4059-b0fc-a01e873ba85c",
    "n": "Radio Television Supreme (RTVS)",
    "urls": [
-    "https://stream-175.surfernetwork.com/bdkwbv3rt98uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJiZGt3YnYzcnQ5OHV2IiwiaG9zdCI6InN0cmVhbS0xNzUuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InRfbHhZTkVVU1pHaTRDOGNmZTF1WkEiLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.m3GsBQ1K76mPQnpUludm7UmYtHlUffxBrclTfWyksSc"
+    "https://stream.zeno.fm/bdkwbv3rt98uv"
    ],
    "site": "https://www.zeno.fm/radio/radio-television-supreme/",
    "favicon": "",
@@ -102,7 +231,23 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-3dfe8d72-9ba4-47f2-9f57-a16cd5b273df",
+   "n": "Radyo Alaturka",
+   "urls": [
+    "https://yayin.jumboserver.net:9100/stream"
+   ],
+   "site": "https://radyoalaturka.com.tr/index?0",
+   "favicon": "https://radyoalaturka.com.tr/site/assets/img/alaturkaLogo.png",
+   "votes": 462,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-25c64b81-7d1d-4f1f-aed6-03a312073341",
@@ -118,7 +263,45 @@
    "pays": "HT",
    "codec": "AAC+",
    "debit": 64,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-a404045e-bd13-4e15-a591-6c81b846b1b8",
+   "n": "Med Radyo",
+   "urls": [
+    "https://medradyo.kesintisizyayin.com:8062/stream"
+   ],
+   "site": "",
+   "favicon": "",
+   "votes": 339,
+   "tags": [
+    "classical"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-c3cf5a4e-6673-42d8-9fb6-e7635ec69f64",
+   "n": "Radyo 45lik Canlı Yayın - En İyi Türkçe Nostalji Şarkılar | 70ler 80ler ve 90lar",
+   "urls": [
+    "https://stream.radyo45lik.com:4545/"
+   ],
+   "site": "https://radyo45lik.com/",
+   "favicon": "",
+   "votes": 250,
+   "tags": [
+    "70s",
+    "80s",
+    "90s"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-4cc9d5e8-a126-479d-9c36-e775baf6a2ff",
@@ -139,10 +322,32 @@
    "ok": "2026-10-21T04:45:08.437Z"
   },
   {
+   "id": "rb-81510d4f-cd42-433e-b1ef-77d2b309fa5a",
+   "n": "Hemdem Radyo",
+   "urls": [
+    "https://yayin.hemdemradyo.com/"
+   ],
+   "site": "https://hemdemradyo.com/",
+   "favicon": "https://hemdemradyo.com/favicon.ico",
+   "votes": 225,
+   "tags": [
+    "arabesk fantazi",
+    "turkish pop",
+    "türk halk müziği",
+    "türk pop",
+    "türk sanat"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
    "id": "rb-2c833ee4-1104-40eb-92d6-994fc9b0edf9",
    "n": "Ananda Marga Haiti",
    "urls": [
-    "https://stream-177.surfernetwork.com/vm8mgn3eewzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ2bThtZ24zZWV3enV2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjdaTU5IbjdPU1J5U2hMZHNzTm94WGciLCJpYXQiOjE3OTI1NTc5MDksImV4cCI6MTc5MjU1Nzk2OX0.G-V5cLGffAuZjzjVi3izDLgF8AxtgK0-_gQEGBh605s"
+    "https://stream-152.zeno.fm/vm8mgn3eewzuv?zs=HWkYw7B5S2C0W0cAcrdGZQ"
    ],
    "site": "https://www.anandamarga.org/haiti/",
    "favicon": "",
@@ -155,16 +360,15 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-f288200c-0093-4a5f-8aac-9e043879b7d9",
    "n": "Radio Humilite",
    "urls": [
-    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Il85ZmJ2WWpEU2hhREZZbTRUUXRTRkEiLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.vb_UlLr1rK0o-b1xc1fCHtzmMge96lmPzKIbBjtOTT0",
-    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjludjM0bGl6UnVhOFh4NjZydmVNMHciLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.5c-riQPFGiCFo8rSweNJ-U0GaoHbjM6XK3NW5lO1s4A",
-    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkQyQkhseGFFU01xMmpiZTYxRVFGREEiLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.efXlkEc6hRMo5djZbWRkdPE3pIiAIcf095R0qm20ZPU",
-    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjhYLURoY29aVFBlTk9jQmtEUFlxR2ciLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.rWHTB8RkOEr1MbMzmK6i0nIOJ5FTzUYWtp_QQR0bO3Q"
+    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImptS1hFSnB3VExPQkpLcXExZTE5cnciLCJpYXQiOjE3OTIyNzc0MzQsImV4cCI6MTc5MjI3NzQ5NH0.MIayTIe8dr06u2HH4cHI096N01bT1wlYrSw0bLB61xc",
+    "https://stream.zeno.fm/qhlllaz21cmuv",
+    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjctOGdKd2JpUzItakpOV3pKZmRRb3ciLCJpYXQiOjE3OTIyMDQyODUsImV4cCI6MTc5MjIwNDM0NX0.OUMGamsXK_dnUvMbCursiTmXz91o17SYIutxoC3Pagc"
    ],
    "site": "https://radio-humilite-2-3-4.e-monsite.com/",
    "favicon": "https://static.e-monsite.com/manager/e-monsite.com/im/favicon.png",
@@ -178,14 +382,45 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-e0850c5c-cf5f-43d1-be3c-879d2d0fd857",
+   "n": "Radyo Bandera Puerto Princesa Palawan",
+   "urls": [
+    "https://bandera.radyoph.com:8000/895hq"
+   ],
+   "site": "https://radyobanderafm.com/",
+   "favicon": "https://1.bp.blogspot.com/-_w45lSZJl38/WdyOH8go99I/AAAAAAAADkM/uyAMtiCGXBkn_QckfCT6KzgGcWBJ52YgACLcBGAs/s320/radyo_bandera_palawan.png",
+   "votes": 222,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-8c85c965-53e8-4243-8570-ef72e98d507d",
+   "n": "Bombo Radyo Laoag",
+   "urls": [
+    "https://stream.zenolive.com/gzvmgtp78heuv"
+   ],
+   "site": "https://laoag.bomboradyo.com/",
+   "favicon": "https://img.bomboradyo.com/newscenter/2024/02/android-chrome-192x192-1.png",
+   "votes": 220,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 160,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-3d51e3ed-bea9-4b68-a935-378b96e4256c",
    "n": "Radio Kiskeya",
    "urls": [
-    "https://stream-288.surfernetwork.com/82q102t62neuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI4MnExMDJ0NjJuZXV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IndncFVpTnhfVDZTYWg1bkFyb1diakEiLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.H97WfUtrXKu4hV4g_ihpdlqBXTu8QTOQxJHYHQttLLg",
-    "https://stream-288.surfernetwork.com/82q102t62neuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI4MnExMDJ0NjJuZXV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlliYkFQUjdlU1J5aFdYSHhSUHU2NXciLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.EASbwgik7x7o6JP9FW_N25fhlPDESGAG5dT54XnT5PI"
+    "https://stream.zeno.fm/82q102t62neuv"
    ],
    "site": "https://zeno.fm/radio/radio-kiskeya/",
    "favicon": "",
@@ -195,13 +430,13 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-48e1242a-45f8-4263-86bf-21d4886e42ab",
    "n": "Radio Jeanvonvon",
    "urls": [
-    "https://stream-176.surfernetwork.com/28zya4hubwzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIyOHp5YTRodWJ3enV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IldzMzJfOGlxUmJLSVVrTE0zcXlIVVEiLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.6YaHnwtNi3kgKNQAiVv1gH1eXI3FTBf20wP_6LGasoY"
+    "https://stream-152.zeno.fm/28zya4hubwzuv?zs=KHC-EIFRRNCzl-jbVyJyjg"
    ],
    "site": "https://onlineradiobox.com/ht/jeanvonvon/",
    "favicon": "null",
@@ -213,7 +448,39 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-f4b4718c-aca0-45dd-bdce-b104dbc0b657",
+   "n": "Radyo Ekin",
+   "urls": [
+    "https://yayin.turkhosted.com/6006/stream"
+   ],
+   "site": "https://www.radyoekin.net/",
+   "favicon": "https://www.radyoekin.net/favicon.ico",
+   "votes": 188,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 160,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-14797ffb-2fdd-4a54-9748-e96486914dd2",
+   "n": "RADYO AKDENIZ",
+   "urls": [
+    "https://yayin.radyoakdeniz.com/9470/stream"
+   ],
+   "site": "https://www.radyoakdeniz.com/",
+   "favicon": "https://www.radyoakdeniz.com/wp-content/uploads/2024/03/cropped-radyoakdeniz-180x180.png",
+   "votes": 182,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-26d6622a-bc5c-444f-bf89-9779df88b20a",
@@ -229,13 +496,13 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-4aac09d9-cc2b-4a3b-980b-1dbe02962bfd",
    "n": "Radio Boursiquot's FM 101.7",
    "urls": [
-    "https://stream-177.surfernetwork.com/yoz610evcpltv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ5b3o2MTBldmNwbHR2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IllydUNwdXN5Um1xb3A5NjBXRE8xU3ciLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.fRABCwcUFrH_EsfU2qb7a709jQbpHp0aioToMjf7saA"
+    "https://stream.zeno.fm/yoz610evcpltv"
    ],
    "site": "https://www.radioboursiquotfm.com/",
    "favicon": "",
@@ -249,7 +516,26 @@
    "pays": "HT",
    "codec": "AAC",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-fcbf07d8-d3b3-4d9f-839a-3cfea3391b35",
+   "n": "Radyo 35",
+   "urls": [
+    "https://yayin.turkhosted.com/6012/stream"
+   ],
+   "site": "https://www.radyo35.com/",
+   "favicon": "https://www.radyo35.com/img/logo.png",
+   "votes": 144,
+   "tags": [
+    "pop",
+    "türkçe"
+   ],
+   "ville": "izmir",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-8cddbb0c-73e6-4290-b52b-fdf391e8abef",
@@ -267,7 +553,39 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-d275d2f3-f918-4f0a-9f12-30fbe098228f",
+   "n": "Kaboses Teleradyo",
+   "urls": [
+    "https://streamnavs.net:8147/live"
+   ],
+   "site": "https://www.facebook.com/DYAB104.7?__cft__[0]=AZV4BjOxb9ge4-U5pdRARIsA_IFklZI5a4ZW-IwslGtp_E6qgK9uTvWgTJQCK10vEKkJUxY6AAWANTdjcTrjxeEmNct0LID2YJ99KW94AVEGnws6Zt4EWXvTdvGqqvN0DDeeHGvCbgUT_Z7ggr0hW1qG2jCIweHeL_pDie1T06RZzhWhw7pSIFZEFlJWw_Ho1E4&__tn__=-]C%2CP-R",
+   "favicon": "https://www.radio-addict.com/media/stream/f0eca215-9f5d-4cdb-8aba-3356a5bb0343_6CB9931FC4BEB40D742ABF13C9F5DE03_icon.png",
+   "votes": 142,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC+",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-f090cb1e-5291-4642-a93b-f41b4b3a691d",
+   "n": "Govend radyo",
+   "urls": [
+    "https://stream-56.zeno.fm/xzzu8kynq2zuv?zs=nZP7ZCRXQPOpDFenayr0bQ"
+   ],
+   "site": "https://stream-56.zeno.fm/",
+   "favicon": "",
+   "votes": 139,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-3a140fb2-9e3e-4e21-9609-1170bb2e255b",
@@ -291,6 +609,61 @@
    "ok": "2026-10-21T04:45:08.437Z"
   },
   {
+   "id": "rb-cef30f27-1f96-4005-8b7c-e161dba43ccf",
+   "n": "Erkam Radyo",
+   "urls": [
+    "https://api-tv5.yayin.com.tr:8002/mp3"
+   ],
+   "site": "https://www.erkamradyo.com/",
+   "favicon": "",
+   "votes": 129,
+   "tags": [
+    "islam",
+    "islamic",
+    "muslim",
+    "religion"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-dd5c1e07-b1b0-47ee-8115-a83eac808807",
+   "n": "Dijital radyo",
+   "urls": [
+    "https://anadolu.liderhost.com.tr:10961/;"
+   ],
+   "site": "https://anadolu.liderhost.com.tr:10961/;",
+   "favicon": "",
+   "votes": 121,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-55fe98c9-1ae8-4fd7-8d30-443ff052b3f0",
+   "n": "Lig Radyo",
+   "urls": [
+    "https://ligradyo.radyotvonline.net/ligradyo"
+   ],
+   "site": "https://ligradyo.radyotvonline.net/ligradyo",
+   "favicon": "",
+   "votes": 116,
+   "tags": [
+    "classical"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 160,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
    "id": "rb-0842377e-9c21-4567-a326-6303a48b0ea1",
    "n": "FPP Fréquence Paris Plurielle rfpp",
    "urls": [
@@ -310,7 +683,39 @@
    "pays": "FR",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-bb107d0e-4da8-453c-a802-a8d6f27cdd73",
+   "n": "Bombo Radyo Butuan",
+   "urls": [
+    "https://stream.zenolive.com/4xptk2enz9duv"
+   ],
+   "site": "https://butuan.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/default-banner-butuan.jpg",
+   "votes": 112,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-b9701efb-878a-4426-a5f5-4df052d7df5a",
+   "n": "Bombo Radyo Koronadal",
+   "urls": [
+    "https://stream.zenolive.com/s81g7zfnz9duv"
+   ],
+   "site": "https://koronadal.bomboradyo.com/",
+   "favicon": "",
+   "votes": 112,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 96,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-4688eb3a-a407-4360-aef6-ac823bbae240",
@@ -332,7 +737,7 @@
    "pays": "US",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-8fefe017-c849-4043-86a2-d42a16a24392",
@@ -348,14 +753,45 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 192,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-89978c73-b0ce-4b84-951b-862f5fac4028",
+   "n": "Radyo Bandera Malaybalay",
+   "urls": [
+    "https://dj.radyoph.com:8000/bandera64"
+   ],
+   "site": "https://dj.radyoph.com:8000/",
+   "favicon": "https://4.bp.blogspot.com/-sH8hzAiB-hg/WdyOGYU7OWI/AAAAAAAADkI/EcTBhg4GTAECo9aPd3BVvCmFKJSi-YpcwCLcBGAs/s320/radyo_bandera_malaybalay.png",
+   "votes": 90,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-02ad59d8-eeb6-41f0-b850-f453bc0401ae",
+   "n": "Radyo 45lik - 45'lik Radyo",
+   "urls": [
+    "https://stream.radyo45lik.com:4545/"
+   ],
+   "site": "https://radyo45lik.com/",
+   "favicon": "",
+   "votes": 86,
+   "tags": [],
+   "ville": "Turkey",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-64f7fd84-fd02-4a27-acaa-98e264211d4a",
    "n": "Radio Jamesen Show",
    "urls": [
-    "https://stream-176.surfernetwork.com/aparrwtkwyzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJhcGFycnd0a3d5enV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InJXSW9ZOVRIUmNpUGhNYzBuMlZ5UGciLCJpYXQiOjE3OTI1NTc5MTEsImV4cCI6MTc5MjU1Nzk3MX0.DRfIn8b7Mb10A6ol3stRH1VkvGBhBMLLdk5Fq1mdzJU",
-    "https://stream-176.surfernetwork.com/aparrwtkwyzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJhcGFycnd0a3d5enV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Ijg2dVNVQUlmU1dPTW1GQ2FzSGZWNFEiLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.AP_94Nv6kgEHj7CN6IAcxtFYrO-HzRdl3CDpU156Ph8"
+    "https://stream.zeno.fm/aparrwtkwyzuv"
    ],
    "site": "https://www.facebook.com/JamesenShow",
    "favicon": "https://www.facebook.com/JamesenShow",
@@ -367,13 +803,113 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-27dc3e5e-8f61-47c8-9ce1-6d6e6b4d4a3a",
+   "n": "Radyo 45’lik, 1970’ler, 1980’ler ve 1990’lar",
+   "urls": [
+    "https://stream.radyo45lik.com:4545/"
+   ],
+   "site": "https://radyo45lik.com/",
+   "favicon": "",
+   "votes": 76,
+   "tags": [
+    "1970’ler",
+    "1980’ler ve 1990’lar",
+    "radyo 45’lik"
+   ],
+   "ville": "Turkey",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-3e525d65-9083-44e7-a2eb-6b7ef411b15a",
+   "n": "98.5 Radyo Kaibigan Valencia City",
+   "urls": [
+    "https://us2.amfmph.com/ssl/vegiemaxplus?mp=/high&1681395562481"
+   ],
+   "site": "https://us2.amfmph.com/ssl/vegiemaxplus?mp=/high&1681395562481",
+   "favicon": "",
+   "votes": 69,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC+",
+   "debit": 48,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-5ce1b00d-26e7-43d2-90c6-c8fd6805e29f",
+   "n": "Bombo Radyo Legazpi",
+   "urls": [
+    "https://stream.zenolive.com/u0uugg5mz9duv"
+   ],
+   "site": "https://legazpi.bomboradyo.com/",
+   "favicon": "",
+   "votes": 67,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-2e1c61ab-1b63-44b4-8d65-4a01f3396c6b",
+   "n": "Aksyon Radyo Cebu",
+   "urls": [
+    "https://a9.asurahosting.com:8260/radio.mp3"
+   ],
+   "site": "https://www.dyrcaksyonradyocebu.com/",
+   "favicon": "https://upload.wikimedia.org/wikipedia/en/2/27/DYRC_logo_2021.jpg",
+   "votes": 65,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 192,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-1fd7925e-09ac-42b3-b560-f4948fa8bfd1",
+   "n": "Elazığ Mavi Radyo",
+   "urls": [
+    "https://yayin.turkhosted.com/6066/stream"
+   ],
+   "site": "https://maviradyo.net/",
+   "favicon": "https://maviradyo.net/assets/images/logo2.png",
+   "votes": 65,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-b1c9647d-c627-4594-921c-52dc1ce87ee3",
+   "n": "Bombo Radyo La Union",
+   "urls": [
+    "https://stream.zenolive.com/n6wgdtu78heuv"
+   ],
+   "site": "https://launion.bomboradyo.com/",
+   "favicon": "https://www.bomboradyo.com/wp-images/la-union-default-banner.jpg",
+   "votes": 62,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-137fa962-fb10-4286-894e-6e6ed780883c",
    "n": "Radi Macaya",
    "urls": [
-    "https://stream-288.surfernetwork.com/e7s1qpe5d4duv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJlN3MxcXBlNWQ0ZHV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Ik1oNTZHTkI5U202OHFpTGdtb0pUM2ciLCJpYXQiOjE3OTI1NTc5MDksImV4cCI6MTc5MjU1Nzk2OX0.Nlw9_z6EqL2KNN5cm7FNa3CFObbTSTCdrjJ8oE5HPZE"
+    "https://stream.zeno.fm/e7s1qpe5d4duv"
    ],
    "site": "http://www.radiomacaya.com/",
    "favicon": "",
@@ -385,13 +921,13 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 64,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-b34a34e3-2fe2-4836-b906-f22c435b9cf6",
    "n": "Radio 4VEH",
    "urls": [
-    "https://stream-289.surfernetwork.com/0zef35h1my5tv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIwemVmMzVoMW15NXR2IiwiaG9zdCI6InN0cmVhbS0yODkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlFZc2hOZThxUXotQWJvNEJHYVBMMlEiLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.9BNlnaMupVwq2tsxFR7CQPIjTE0cyXkj-7gBQmKdvqI"
+    "https://stream.zeno.fm/0zef35h1my5tv"
    ],
    "site": "https://radio.ht/4veh/",
    "favicon": "",
@@ -401,7 +937,71 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-d35ed8b1-871b-47e9-8df0-cfb4a094095b",
+   "n": "Radyo 2000 Erzincan",
+   "urls": [
+    "https://radyo.yayindakiler.com:3030/stream?/;stream.mp3"
+   ],
+   "site": "http://www.2000radyo.com/",
+   "favicon": "",
+   "votes": 61,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-49bea778-f0cb-4141-bc30-b563c7f545b0",
+   "n": "Bombo Radyo Malaybalay",
+   "urls": [
+    "https://stream.zeno.fm/1etogiwypoztv"
+   ],
+   "site": "https://malaybalay.bomboradyo.com/",
+   "favicon": "https://news.bomboradyo.com/wp-content/uploads/2024/08/cropped-site-icon-180x180.png",
+   "votes": 59,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-f33d5e1c-6135-11ea-be63-52543be04c81",
+   "n": "Kompa Lakay Radio",
+   "urls": [
+    "https://us3new.listen2myradio.com:2199/listen.php?port=8117&type=s2&mount=/1?ver=174991"
+   ],
+   "site": "https://www.klrfm.com/",
+   "favicon": "",
+   "votes": 59,
+   "tags": [],
+   "ville": "",
+   "pays": "",
+   "codec": "MP3",
+   "debit": 0,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-4b50db1d-d1e5-4376-9bca-7df77857dda4",
+   "n": "Bombo Radyo Tuguegarao",
+   "urls": [
+    "https://stream.zenolive.com/w8pcsam29heuv"
+   ],
+   "site": "https://tuguegarao.bomboradyo.com/",
+   "favicon": "https://www.bomboradyo.com/wp-images/tuguegarao-default-banner.jpg",
+   "votes": 56,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-a2a84382-5ab0-4846-83c4-ea0d40b78c35",
@@ -417,7 +1017,7 @@
    "pays": "US",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-5d97af74-e4df-4ac4-bec4-002d26f1eadd",
@@ -433,7 +1033,27 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-ce26d234-1413-4a97-8f7d-5a476bacf104",
+   "n": "Apacik Radyo",
+   "urls": [
+    "https://stream.34bit.net/ar.aac",
+    "https://stream.34bit.net/ar.mp3"
+   ],
+   "site": "http://www.apacikradyo.com.tr/",
+   "favicon": "https://apacikradyo.com.tr/logo1024",
+   "votes": 48,
+   "tags": [
+    "community radio",
+    "world music"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-9090b5f8-a2d3-4774-ac27-776676632c06",
@@ -451,7 +1071,122 @@
    "pays": "HT",
    "codec": "AAC+",
    "debit": 64,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-b23241a8-5b48-4754-889e-4158ebda3bcd",
+   "n": "Radyo Katribu Philippines Teleradyo",
+   "urls": [
+    "https://io.radyoph.com:8020/katribu"
+   ],
+   "site": "https://radyoph.com/station/radyokatribu/",
+   "favicon": "https://radyoph.com/wp-content/uploads/2025/02/radyokatribu-150x150.png",
+   "votes": 45,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-2c92939c-ac4b-4b3f-b4b2-6c99457c52b0",
+   "n": "Bombo Radyo Cagayan De Oro",
+   "urls": [
+    "https://stream.zenolive.com/49y7kdenz9duv"
+   ],
+   "site": "https://cdo.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/cdo-default-banner.jpg",
+   "votes": 43,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-29664f25-1649-4725-b88b-89381616b55f",
+   "n": "Engelliler radyo",
+   "urls": [
+    "https://stream.zeno.fm/iuqovax9ftsvv"
+   ],
+   "site": "https://stream.zeno.fm/iuqovax9ftsvv",
+   "favicon": "",
+   "votes": 43,
+   "tags": [
+    "classical"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-d3714737-f527-451f-a93d-a66368e188b0",
+   "n": "Erzincan Nostalji Radyo",
+   "urls": [
+    "https://erzincannostalji.ozelip.com/8238/stream"
+   ],
+   "site": "https://erzincannostalji.ozelip.com/8238/stream",
+   "favicon": "null",
+   "votes": 41,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-cae4433a-f208-469c-8a98-2bffade2a58d",
+   "n": "Bombo Radyo Kalibo",
+   "urls": [
+    "https://stream.zenolive.com/s10z665mz9duv",
+    "https://stream.zeno.fm/s10z665mz9duv"
+   ],
+   "site": "https://kalibo.bomboradyo.com/",
+   "favicon": "https://img.bomboradyo.com/cauayan/2024/01/Bombo-Radyo-Default-Banner.jpg",
+   "votes": 40,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-0a9a8a20-2b30-46a8-ac10-6ef06be16889",
+   "n": "Radyo Duygusal",
+   "urls": [
+    "https://radyoduygusal.kesintisizyayin.com:9596/;*.nsv"
+   ],
+   "site": "https://radyoduygusal.com/",
+   "favicon": "https://radyoduygusal.com/uploads/favicon/oooooooo.jpg",
+   "votes": 39,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-50c77d00-fc9d-4943-ae90-6a4c4f7fb55b",
+   "n": "Kafa Radyo",
+   "urls": [
+    "https://radyofitrat.radyotvonline.net/"
+   ],
+   "site": "https://kafaradyo.com/",
+   "favicon": "",
+   "votes": 36,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-7e9e4c3f-9692-4c62-af52-6437ad9cbbc1",
@@ -473,7 +1208,23 @@
    "pays": "GP",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-15cc4554-cd2e-4ecb-a28d-163816cc3d9e",
+   "n": "Radyo 13",
+   "urls": [
+    "https://radyo.yayindakiler.com:3050/stream?/;stream.mp3"
+   ],
+   "site": "http://www.radyo13.com.tr/",
+   "favicon": "",
+   "votes": 33,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-86c03473-3076-496e-b458-1ea27bc44f50",
@@ -508,10 +1259,63 @@
    "ok": "2026-10-21T04:45:08.437Z"
   },
   {
+   "id": "rb-03fe4753-3683-4913-ac9a-b32d260da990",
+   "n": "Erkam Radyo 2nd Stream",
+   "urls": [
+    "https://yayin2.canliyayin.org:10910/stream?"
+   ],
+   "site": "https://www.erkamradyo.com/",
+   "favicon": "https://play-lh.googleusercontent.com/Hf0NtOQoXmIPWe2Hz8C5nptvA6Hx4QOvPmuE1bOkDhjcV6bJgRZBWAXS3Cjtf64QvD0",
+   "votes": 27,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-a520fa1d-ec10-4f66-b16e-631bb701f784",
+   "n": "90.7 Radyo Oragon Legazpi",
+   "urls": [
+    "https://streamnavs.net:8181/live"
+   ],
+   "site": "https://www.facebook.com/p/Radyo-Oragon-907-News-Fm-100084331060993/",
+   "favicon": "https://static-media.streema.com/media/cache/11/49/1149a6f8dc1fbc097cd0ea137891d131.jpg",
+   "votes": 25,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-c16f41f7-668c-409f-aeda-d1d1bb3f1761",
+   "n": "Radyo EN",
+   "urls": [
+    "https://yayin2.canliyayin.org:7222/;"
+   ],
+   "site": "https://www.radyoen.com.tr/",
+   "favicon": "https://www.radyoen.com.tr/images/radyo-en-logo.png",
+   "votes": 25,
+   "tags": [
+    "ilahi",
+    "islam",
+    "islamic",
+    "konya"
+   ],
+   "ville": "Konya",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
    "id": "rb-e4576123-9cb3-4371-a391-169a3e422a73",
    "n": "RHAI",
    "urls": [
-    "https://stream-288.surfernetwork.com/mbd2kns9m5zuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJtYmQya25zOW01enV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImdnSW5scDVvUU5LOGxzbXpWczItU2ciLCJpYXQiOjE3OTI1NTc5MTIsImV4cCI6MTc5MjU1Nzk3Mn0.ZNDlCH8G5BJwK-3H0dyAZ0sh9VfJmEy12ZUiz8Mlrh4"
+    "https://stream-165.zeno.fm/mbd2kns9m5zuv"
    ],
    "site": "https://radiohaitiameriqueinternationale.com/",
    "favicon": "",
@@ -521,7 +1325,42 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-1a43c888-149f-4d58-ba45-1168efdcddde",
+   "n": "Radyo 45'lik",
+   "urls": [
+    "https://stream.radyo45lik.com:4545/"
+   ],
+   "site": "https://radyo45lik.com/",
+   "favicon": "",
+   "votes": 20,
+   "tags": [
+    "pop",
+    "retro music"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-cab3a3a0-78b8-4f8d-bb40-ab3d5d717ce8",
+   "n": "Kıyı Radyo",
+   "urls": [
+    "https://kiyi.radioca.st/stream"
+   ],
+   "site": "https://kiyimuzik.com/",
+   "favicon": "",
+   "votes": 19,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 320,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-7d827f0e-85bc-4601-80d4-77d4391f60cf",
@@ -545,10 +1384,26 @@
    "ok": "2026-10-21T04:45:08.437Z"
   },
   {
+   "id": "rb-5f8cb6c6-bc5c-41e6-bd4d-ff18bddc9331",
+   "n": "Abante Radyo",
+   "urls": [
+    "https://stream.radio.co/s97e866418/listen"
+   ],
+   "site": "https://www.abante.com.ph/e/",
+   "favicon": "https://www.abante.com.ph/wp-content/uploads/2022/09/abante-logo.webp",
+   "votes": 17,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
    "id": "rb-033c7983-31f9-4470-a582-fa70dee478d3",
    "n": "Radio Bien Etre FM",
    "urls": [
-    "https://stream-176.surfernetwork.com/zxg8t9gr3f8uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ6eGc4dDlncjNmOHV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImgwQXlFcVFTU0k2b0NNOHpYNFVrNFEiLCJpYXQiOjE3OTI1NTc5MTAsImV4cCI6MTc5MjU1Nzk3MH0.tcU94Ld18pBHSk0XB_76VDlGVX-tkNyoiuTxOlulN5A"
+    "https://stream.zeno.fm/zxg8t9gr3f8uv"
    ],
    "site": "https://www.radiobienetre.com/",
    "favicon": "",
@@ -562,7 +1417,458 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-95970f1a-5cb6-4e33-8b17-c47b1a5ba625",
+   "n": "Cihan Radyo",
+   "urls": [
+    "https://listen.radioking.com/radio/301204/stream/347869",
+    "https://play.radioking.io/cihan-radyo"
+   ],
+   "site": "https://cihanradyo.com/",
+   "favicon": "",
+   "votes": 16,
+   "tags": [],
+   "ville": "",
+   "pays": "US",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-a2d61d9a-9ddd-4838-8d4a-ed950c48d861",
+   "n": "Göl Radyo",
+   "urls": [
+    "https://28553.live.streamtheworld.com/SUPER_FM_ITUNES.mp3"
+   ],
+   "site": "https://bingolradyo.com/",
+   "favicon": "https://www.canliradyodinle.fm/wp-content/uploads/gol-radyo.jpg",
+   "votes": 16,
+   "tags": [
+    "folk",
+    "pop"
+   ],
+   "ville": "Bingöl",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-d9dc8607-d88d-48f2-bde0-1dc98c901f68",
+   "n": "NUR Radyo",
+   "urls": [
+    "https://canli.hidayetradyolari.com/listen/radyo_nur/radio.mp3"
+   ],
+   "site": "https://www.mihr.com/radyo/4/radyo-nurtv",
+   "favicon": "https://www.mihr.com/Content/images/mihrcom.ico",
+   "votes": 15,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 32,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-32b834ba-6093-4d93-9e7d-02f234a27bea",
+   "n": "Bombo Radyo Cauayan",
+   "urls": [
+    "https://stream.zenolive.com/0psak3m29heuv"
+   ],
+   "site": "https://cauayan.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/cauayan-default-banner.jpg",
+   "votes": 12,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-255fb3fd-103a-475a-80e1-c55c6ada09ef",
+   "n": "DEDEMİN RADYOSU",
+   "urls": [
+    "https://anadolu.liderhost.com.tr/9002/stream"
+   ],
+   "site": "https://anadolu.liderhost.com.tr/9002/stream",
+   "favicon": "",
+   "votes": 12,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-3dfee018-bbdc-4851-9985-840500bf95b8",
+   "n": "DXGT RADYO ABANTE",
+   "urls": [
+    "https://stream.zeno.fm/z80zubtvrf9uv"
+   ],
+   "site": "https://radyoph.com/station/dxgt-radyo-bante-maramag-bukidnon",
+   "favicon": "https://apk.radyoph.com/upload/1770859251_RadyoAbanteMaramag.png",
+   "votes": 12,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-1d2ae49c-4522-418a-a8cc-5f530349671f",
+   "n": "MPL Radyo",
+   "urls": [
+    "https://canli.hidayetradyolari.com/listen/mpl_radyo/radio.mp3"
+   ],
+   "site": "https://www.mihr.com/radyo/7/radyo-mpl",
+   "favicon": "https://www.mihr.com/Content/images/mihrcom.ico",
+   "votes": 12,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 32,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-05780f0f-6fbd-480c-916f-4133c7292273",
+   "n": "Gevaş Sesi Radyosu",
+   "urls": [
+    "https://live.radyositesihazir.com:8056/stream"
+   ],
+   "site": "https://www.gevasfm.net/",
+   "favicon": "",
+   "votes": 11,
+   "tags": [],
+   "ville": "Gevaş",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-0f6cf0e2-500c-4e87-bde3-164465fa3561",
+   "n": "Radyo Doğubayazıt FM 104.4",
+   "urls": [
+    "https://radyo1.radyo-dinle.tc/8156/stream"
+   ],
+   "site": "https://www.radyodogubayazit.com/",
+   "favicon": "https://www.radyodogubayazit.com/img/logo7.png",
+   "votes": 10,
+   "tags": [],
+   "ville": "Doğubayazıt",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-34631647-80f2-4928-8a9f-1662f1e881ce",
+   "n": "HEY RADYO",
+   "urls": [
+    "https://usa4.fastcast4u.com/proxy/radyoizmirfm/mp3stream128"
+   ],
+   "site": "http://www.heyradyo.com/",
+   "favicon": "https://www.heyradyo.com/assets/favicon.png",
+   "votes": 9,
+   "tags": [
+    "turkish music",
+    "turkish pop",
+    "turkish rap",
+    "turkish rock"
+   ],
+   "ville": "izmir",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 256,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-6555e142-e9f5-4f1e-be0a-fef1eb908478",
+   "n": "Ostim Radyo",
+   "urls": [
+    "https://stream.netradyom.com/radio/8010/radio.mp3%22"
+   ],
+   "site": "https://www.ostimradyo.com/",
+   "favicon": "",
+   "votes": 9,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-f2a6c4fd-c15d-4208-8f0f-bd0a2bbb79cf",
+   "n": "Radyo Bandera Olongapo",
+   "urls": [
+    "https://sound.amfm.link:8030/banderaolongapo"
+   ],
+   "site": "https://radyobanderafm.com/olongapo/",
+   "favicon": "https://radyobanderafm.com/wp-content/uploads/2023/08/Bandera-Network-300x300.png",
+   "votes": 9,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-46330ebb-12b3-4a45-aa14-21556084c5cd",
+   "n": "96.3 Radyo Natin FM HD",
+   "urls": [
+    "https://azura.yesfm.com.ph/listen/yes_fm_manila/radio.mp3"
+   ],
+   "site": "https://radyonatinfm.com/?p_asid=1&p_asl_data=1&customset[]=page&asl_gen[]=exact&qtranslate_lang=0&filters_initial=1&filters_changed=0&asl_s=Radyo%20Natin",
+   "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbqr6TdQAFpXrzFCwjPZV81SOyfts6N7o-B_q-aXHHfQ&s=10",
+   "votes": 8,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-df78ba9f-467d-403c-809d-c04677a920ca",
+   "n": "Bombo Radyo Vigan",
+   "urls": [
+    "https://stream.zenolive.com/wg8yn4cnz9duv"
+   ],
+   "site": "https://vigan.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/default-banner-vigan.jpg",
+   "votes": 8,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-1e84114e-ade9-4baf-9f85-89411162ccfe",
+   "n": "Radyo 13 FM 96",
+   "urls": [
+    "https://radyo.yayindakiler.com:3050/stream"
+   ],
+   "site": "https://www.radyo13.com.tr/iletisim",
+   "favicon": "https://www.radyo13.com.tr/wp-content/uploads/2022/10/WhatsApp_Image_2022-10-11_at_15.27.31-removebg-preview.png",
+   "votes": 8,
+   "tags": [],
+   "ville": "Tatvan",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-2304e97c-5796-4a40-84a2-64a231732e47",
+   "n": "Radyo Bilkent",
+   "urls": [
+    "https://stream.netradyom.com/listen/radyobilkent/radio.mp3"
+   ],
+   "site": "https://www.radyobilkent.com/",
+   "favicon": "",
+   "votes": 8,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 48,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-b35ab22b-7b16-4b41-baa9-72f112644b6e",
+   "n": "105.5 Radyo Gwapito",
+   "urls": [
+    "https://stream-179.zeno.fm/b1vknfz1yedvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJiMXZrbmZ6MXllZHZ2IiwiaG9zdCI6InN0cmVhbS0xNzkuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IlJJdGVyTjJMVEZtVUtuRGwwZEF4QmciLCJpYXQiOjE3NzY5MjQwMzMsImV4cCI6MTc3NjkyNDA5M30.m-bkCncFsKE-Wu_Dzhde3nvA5X15xQcWwL5jhu87vH0"
+   ],
+   "site": "https://zeno.fm/radio/rgfm-radyo-gwapito-105-5/",
+   "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5HIDgsryKOsAhQvI0wqJYW0uL4beUYqN9lylfn9pRYA&s=10",
+   "votes": 7,
+   "tags": [
+    "music",
+    "news"
+   ],
+   "ville": "Naga, Camarines Sur",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-21df519d-9c3f-47e5-a8e1-32a80901398f",
+   "n": "24 Radyo",
+   "urls": [
+    "https://radyo24.radyotvonline.net/radyo24"
+   ],
+   "site": "https://www.24radyo.com/",
+   "favicon": "",
+   "votes": 7,
+   "tags": [
+    "haber",
+    "news",
+    "talk",
+    "turkish"
+   ],
+   "ville": "İstanbul",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-2591f92f-ca33-400a-a899-94208971778f",
+   "n": "Bombo Radyo Cebu",
+   "urls": [
+    "https://stream.zenolive.com/cc4d8bbnz9duv"
+   ],
+   "site": "https://cebu.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/cebu-default-banner.jpg",
+   "votes": 7,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-59e304ef-8fc2-4f9b-9731-9ef95dd19c6a",
+   "n": "ÇEŞME VİKİNG RADYO",
+   "urls": [
+    "https://ip169.ozelip.com/8432/stream"
+   ],
+   "site": "https://ip169.ozelip.com/8432/stream",
+   "favicon": "",
+   "votes": 6,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-ea534546-de6e-4d08-b4bf-447a1cbeee56",
+   "n": "CGTN Türk Radyo",
+   "urls": [
+    "https://criturk.radyotvonline.net/"
+   ],
+   "site": "https://www.cgtnturk.com/radyo?trk=public_post-text",
+   "favicon": "https://cgtnturkcom.teimg.com/cgtnturk-com/uploads/2024/07/cgtn-turk-favicon-altin-1.png",
+   "votes": 6,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-d8ed6337-bc5c-4d37-80ec-efe75881796b",
+   "n": "RADYO 75",
+   "urls": [
+    "https://anadolu.liderhost.com.tr/8126/stream"
+   ],
+   "site": "https://anadolu.liderhost.com.tr/8126/stream",
+   "favicon": "",
+   "votes": 6,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-c7ba45c9-df45-4daf-857e-19b6a47a0e35",
+   "n": "Radyo Bandera Valencia",
+   "urls": [
+    "https://xcite.radyoph.com:8000/rbvalencia64"
+   ],
+   "site": "https://radyobanderafm.com/valencia/",
+   "favicon": "https://2.bp.blogspot.com/--DFC-9Ap150/WmVL_av16LI/AAAAAAAADz4/oOVMG13UD2QtHcvyRhJdZIJzuKwPK941wCLcBGAs/s320/radyo-bandera-valencia-amfmph.png",
+   "votes": 6,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-1690f824-0e5f-48ad-affc-5e4f364f8056",
+   "n": "95.1 TEMPO RADYO HATAY",
+   "urls": [
+    "https://sslyayin.netyayin.net/tempo/stream"
+   ],
+   "site": "https://hatayradyosu.com/",
+   "favicon": "https://hatayradyosu.com/resgenel/radyo/tempo.jpg",
+   "votes": 5,
+   "tags": [],
+   "ville": "Hatay",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 96,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-62978ad7-a686-46cb-b45a-d81102e21d85",
+   "n": "Barış Radyo 104.8",
+   "urls": [
+    "https://yayin2.canliyayin.org:9350/stream?/;stream.mp3"
+   ],
+   "site": "https://www.barisfm.com/",
+   "favicon": "https://www.canliradyodinle.fm/wp-content/uploads/barisr-adyo.jpg",
+   "votes": 5,
+   "tags": [
+    "islamic، classical"
+   ],
+   "ville": "Adana",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-10624133-ba31-42b8-a874-5c366d5cfe99",
+   "n": "DWJE 88.1 FM Radyo Pangasinan",
+   "urls": [
+    "https://tiny-sun-4316.radyopangasinan88-1fm.workers.dev/stream"
+   ],
+   "site": "https://radyopangasinan.xo.je/?i=1",
+   "favicon": "https://radyopangasinan.xo.je/placeholder/april%2011-2026/caramat.jpg",
+   "votes": 5,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 0,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-664c2489-5a16-4fb0-8aaf-8b8b5306aa9c",
+   "n": "Mega Radyo FM 97.7",
+   "urls": [
+    "https://dinle.megaradyoiskenderun.com/8024/stream"
+   ],
+   "site": "https://www.megaradyoiskenderun.com/",
+   "favicon": "https://www.megaradyoiskenderun.com/upload/tema/20260224__7638666033.jpg",
+   "votes": 5,
+   "tags": [],
+   "ville": "İskenderun",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-a8e146d3-0c2e-4519-9018-86e0862d7bca",
@@ -584,6 +1890,358 @@
    "ok": "2026-10-21T04:45:08.437Z"
   },
   {
+   "id": "rb-c9c7873f-b892-43e0-b9ce-77dc8acbfbb7",
+   "n": "Bombo Radyo Tacloban",
+   "urls": [
+    "https://stream.zeno.fm/e8zw1dg0xy5tv"
+   ],
+   "site": "https://tacloban.bomboradyo.com/",
+   "favicon": "https://img.bomboradyo.com/newscenter/2024/01/Bombo-Radyo-Default-Banner.jpg",
+   "votes": 4,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-e5e4f77a-3821-45b3-9d59-14f5d8b83ab4",
+   "n": "RADYO D",
+   "urls": [
+    "https://radyo.duhnet.tv/radyod"
+   ],
+   "site": "https://radyo.duhnet.tv/radyod",
+   "favicon": "",
+   "votes": 4,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 0,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-3d9cf0d5-41a8-441f-bd5e-2ed47c0a0cda",
+   "n": "Bombo Radyo Bacolod",
+   "urls": [
+    "https://stream.zenolive.com/g2ak4fu78heuv"
+   ],
+   "site": "https://bacolod.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/default-banner-bacolod.jpg",
+   "votes": 3,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-278713fd-f585-4d1c-b6bd-5e5baccae46f",
+   "n": "EZGİ RADYO",
+   "urls": [
+    "https://sslyayin.netyayin.net/elazigezgiradyo/stream/;",
+    "https://radyo.yayindakiler.com:3044/;"
+   ],
+   "site": "http://elazigezgiradyo.com/",
+   "favicon": "",
+   "votes": 3,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-947164c2-b12e-4195-bb85-9dd05cab2f36",
+   "n": "Radyo Bandilyo DYWC 801 AM Dumaguete",
+   "urls": [
+    "https://stream.surfernetwork.com/y44vjussapdvv"
+   ],
+   "site": "https://dywc801am.com/",
+   "favicon": "https://apk.radyoph.com/upload/1716081842_DYWCradyoandilyo.png",
+   "votes": 3,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-8fa300ca-d563-4a5b-88e5-9caccecf43c1",
+   "n": "Radyo Dingil",
+   "urls": [
+    "https://live.sinirsizhost.com.tr/8056/;"
+   ],
+   "site": "https://dingilradyo.com.tr/",
+   "favicon": "https://r.resimlink.com/CfF49Nv.jpeg",
+   "votes": 3,
+   "tags": [
+    "karışık"
+   ],
+   "ville": "van",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-b9e73447-0881-4b01-9e79-322f9e69d050",
+   "n": "Bloomberg HT Radyo",
+   "urls": [
+    "https://bloomberghtradyo.radyotvonline.net/bloomberghtradyo"
+   ],
+   "site": "https://www.bloomberghtradyo.com/",
+   "favicon": "",
+   "votes": 2,
+   "tags": [
+    "business",
+    "ekonomi",
+    "finance",
+    "haber",
+    "news"
+   ],
+   "ville": "İstanbul",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-fa61e57b-cb22-4fcb-bdc9-57e1f1091605",
+   "n": "GELİŞİM RADYO",
+   "urls": [
+    "https://radyo.yayindakiler.com:4008/stream"
+   ],
+   "site": "http://www.gelisimtv.com.tr/",
+   "favicon": "",
+   "votes": 2,
+   "tags": [],
+   "ville": "Karadeniz",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-da32fe6d-2c0d-4ffa-bf9d-b408e077417c",
+   "n": "OMÜ Radyo",
+   "urls": [
+    "https://omuradyo.ozelip.com/8042/stream"
+   ],
+   "site": "https://omuradyo.com.tr/canliyayin.asp",
+   "favicon": "https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_884.png?v=5",
+   "votes": 2,
+   "tags": [],
+   "ville": "Samsun",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-a3c51aff-d982-4d07-873c-c9909864000f",
+   "n": "RADYO 90",
+   "urls": [
+    "https://live.radyo.in/9054/stream"
+   ],
+   "site": "https://live.radyo.in/9054/stream",
+   "favicon": "",
+   "votes": 2,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-e488ba92-780e-4de6-960b-569566726259",
+   "n": "Radyo Bandera Trento",
+   "urls": [
+    "https://cd.amfm.link:8010/bandera_trento"
+   ],
+   "site": "https://radyoph.com/station/banderatrento",
+   "favicon": "https://apk.radyoph.com/upload/1782447154_banderatrento.png",
+   "votes": 2,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-3e96b295-7ab8-4bae-b21d-66d92a7ac1b1",
+   "n": "Radyo Dede Bilişim Test Yayını",
+   "urls": [
+    "https://live.sinirsizhost.com.tr/8080/stream"
+   ],
+   "site": "https://dedebilisim.com.tr/",
+   "favicon": "https://dedebilisim.com.tr/uploads/settings/1779818800_DedeBili%C5%9Fim%20logo%20yaz%C4%B1-crop.png",
+   "votes": 2,
+   "tags": [
+    "karışık"
+   ],
+   "ville": "İstanbul Avrupa",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-770dde25-0160-4b24-85fa-a38cb99f1747",
+   "n": "RADYO DRK",
+   "urls": [
+    "https://stream.zeno.fm/czwwh7xfqm0uv"
+   ],
+   "site": "https://stream.zeno.fm/czwwh7xfqm0uv",
+   "favicon": "",
+   "votes": 2,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-f5d89616-5673-46b8-934c-237ca22f0bcc",
+   "n": "Afra Radyo",
+   "urls": [
+    "https://radyo.yayin.com.tr:5714/stream"
+   ],
+   "site": "https://www.afraradyo.com/",
+   "favicon": "https://dl.dropboxusercontent.com/scl/fi/nlyieny7k39k6wtp1uh8e/afraradyo.png?rlkey=7em43zu5qe3lj8zrc52sr64ae&st=q7hyjkw2",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 320,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-5b3ce092-af80-46ac-8e07-c97f6cb09423",
+   "n": "BAU RADYO",
+   "urls": [
+    "https://ssl120.radyotelekom.com.tr/8106/stream.mp4"
+   ],
+   "site": "https://ssl120.radyotelekom.com.tr/8106/stream.mp4",
+   "favicon": "",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-18774714-40aa-49ee-82a5-95e109037a63",
+   "n": "Bombo Radyo Baguio",
+   "urls": [
+    "https://stream.zenolive.com/zmb6xdf29heuv"
+   ],
+   "site": "https://baguio.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/baguio-default-banner.jpg",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 96,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-04bf2806-4ce5-4114-925a-03fe55aaf8ad",
+   "n": "Esas radyo",
+   "urls": [
+    "https://yayin.turkhosted.com:6034/stream/;stream.mp3"
+   ],
+   "site": "https://www.lokomotifradyolari.com/",
+   "favicon": "",
+   "votes": 1,
+   "tags": [
+    "music",
+    "pop"
+   ],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-2e4ee5d9-18ef-4073-8d6e-5582808216ff",
+   "n": "Hemdem Pop Radyo",
+   "urls": [
+    "https://yayin.hemdemradyo.com/"
+   ],
+   "site": "https://www.hemdemradyo.com/",
+   "favicon": "https://ibb.co/r2VYMqy7",
+   "votes": 1,
+   "tags": [
+    "türkçe pop"
+   ],
+   "ville": "Uskudar",
+   "pays": "TR",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-45a00245-168f-4996-bb29-585969d7c7d7",
+   "n": "MK Radyo",
+   "urls": [
+    "https://live.sinirsizhost.com.tr/8028/stream"
+   ],
+   "site": "https://mkradyo.com/",
+   "favicon": "https://mkradyo.com/mk.png?v=20260512-0247",
+   "votes": 1,
+   "tags": [],
+   "ville": "Istanbul",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 320,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-d0d6c480-6e29-4fae-8ae1-7de55e1cf09f",
+   "n": "Münih Radyo",
+   "urls": [
+    "https://yayin.munihradio.com/8854/stream"
+   ],
+   "site": "https://www.munihradio.com/",
+   "favicon": "",
+   "votes": 1,
+   "tags": [],
+   "ville": "Bavaria",
+   "pays": "DE",
+   "codec": "MP3",
+   "debit": 96,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-22f193e6-20b1-4396-aecc-2f960a2a9d59",
+   "n": "RADYO 44",
+   "urls": [
+    "https://radyo44.80.yayin.com.tr/stream"
+   ],
+   "site": "https://radyo44.80.yayin.com.tr/stream",
+   "favicon": "",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
    "id": "rb-ce516ac3-13e2-4259-88a0-69f033593818",
    "n": "Radyo ACICORP",
    "urls": [
@@ -603,7 +2261,87 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 192,
-   "ok": "2026-10-21T04:45:08.437Z"
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-0316f522-5a00-499c-bcf0-aceb9076f33c",
+   "n": "RADYO ATILIM",
+   "urls": [
+    "https://listen.powerapp.com.tr/radyoatilim/mpeg/icecast.audio"
+   ],
+   "site": "https://listen.powerapp.com.tr/radyoatilim/mpeg/icecast.audio",
+   "favicon": "",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-82a8b94c-70f7-4a66-aa3e-9f690659104f",
+   "n": "RADYO AVARE",
+   "urls": [
+    "https://anadolu.liderhost.com.tr:10980/;"
+   ],
+   "site": "https://anadolu.liderhost.com.tr:10980/;",
+   "favicon": "",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-137a4a3f-7685-4616-917a-dfb001b7a90d",
+   "n": "RADYO B",
+   "urls": [
+    "https://radyob.ozelip.com.tr/8042/stream"
+   ],
+   "site": "https://radyob.ozelip.com.tr/8042/stream",
+   "favicon": "",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 320,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-8642f0aa-c15e-4321-8564-21420fb57799",
+   "n": "Radyo Devrek",
+   "urls": [
+    "https://live.sinirsizhost.com.tr/8008/stream"
+   ],
+   "site": "https://radyodevrek.com.tr/",
+   "favicon": "https://radyodevrek.com.tr/uploads/logom/xlogo_1.png",
+   "votes": 1,
+   "tags": [],
+   "ville": "Devrek",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-21963b5f-64d1-486b-bdb7-5370c3320d16",
+   "n": "RADYO DURAK",
+   "urls": [
+    "https://radyo.yayindakiler.com:8018/;"
+   ],
+   "site": "http://www.radyodurak.net/",
+   "favicon": "https://radyodurak.net/wp-content/uploads/2025/06/002-Yatay-RADYO-DURAK-92-0.png",
+   "votes": 1,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 80,
+   "ok": "2026-10-21T04:45:45.675Z"
   },
   {
    "id": "rb-5d52d204-c77e-4718-b9ca-d52788f088d3",
@@ -628,6 +2366,82 @@
    "ok": "2026-10-21T04:45:08.437Z"
   },
   {
+   "id": "rb-c436feea-f408-4d51-8170-14a3d8d869b4",
+   "n": "Bombo Radyo GenSan",
+   "urls": [
+    "https://stream.zenolive.com/ke2denfnz9duv"
+   ],
+   "site": "https://gensan.bomboradyo.com/",
+   "favicon": "https://bomboradyo.com/wp-images/gensan-default-banner.jpg",
+   "votes": 0,
+   "tags": [],
+   "ville": "",
+   "pays": "PH",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-2f01c086-eddb-432f-9d1c-37e634d03ce9",
+   "n": "Durak Türk Radyo TV",
+   "urls": [
+    "https://live.sinirsizhost.com.tr/8046/stream"
+   ],
+   "site": "https://durakturktv.com/radyo",
+   "favicon": "https://durakturktv.com/file.php?path=data%2Fuploads%2Fbiz_logo_93dfc080.png",
+   "votes": 0,
+   "tags": [
+    "karma",
+    "müzik",
+    "pop music"
+   ],
+   "ville": "İstanbul",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-58893b85-4e2d-4cd9-8bd3-bc452d6f82a1",
+   "n": "Espwa Radyo 97",
+   "urls": [
+    "https://stream10.vestaradio.com/espwaradyo97"
+   ],
+   "site": "https://www.espwaradyo97.com/",
+   "favicon": "",
+   "votes": 0,
+   "tags": [
+    "classical",
+    "country",
+    "instrumental",
+    "jazz"
+   ],
+   "ville": "",
+   "pays": "FR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-653a063c-6d10-46da-af43-ceaeee50c933",
+   "n": "fark radyo",
+   "urls": [
+    "https://farkradyo.ozelip.com.tr:8058/stream"
+   ],
+   "site": "http://farkradyo.com/",
+   "favicon": "",
+   "votes": 0,
+   "tags": [
+    "latin jazz",
+    "pop music"
+   ],
+   "ville": "Turkey",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 320,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
    "id": "rb-497b0ca0-648a-4a71-86db-7e3425921ed3",
    "n": "FlavorJamz Radio",
    "urls": [
@@ -650,6 +2464,22 @@
    "ok": "2026-10-21T04:45:08.437Z"
   },
   {
+   "id": "rb-55fc60d1-e0de-4c67-90fc-558881ca4a04",
+   "n": "Herkul Radyo",
+   "urls": [
+    "https://listen.radioking.com/radio/721190/stream/787034"
+   ],
+   "site": "https://www.herkulradyo.com/",
+   "favicon": "",
+   "votes": 0,
+   "tags": [],
+   "ville": "Pennsylvania",
+   "pays": "US",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
    "id": "rb-7046be69-ea5c-43fb-8e20-3c4715911ac0",
    "n": "NRG Radio345",
    "urls": [
@@ -670,6 +2500,86 @@
    "codec": "MP3",
    "debit": 192,
    "ok": "2026-10-21T04:45:08.437Z"
+  },
+  {
+   "id": "rb-f5f8cb35-3051-4128-8194-fbe9be548c12",
+   "n": "Radyo 37",
+   "urls": [
+    "https://radyo.yayindakiler.com:3192/stream"
+   ],
+   "site": "http://www.radyo37.com.tr/",
+   "favicon": "https://www.radyo37.com.tr/wp-content/uploads/2024/10/logooo.png",
+   "votes": 0,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-0b3fa343-e19c-4498-afe0-b1abb0ce689b",
+   "n": "RADYO AHENK",
+   "urls": [
+    "https://yayin.radyomadyo.com:8014/stream"
+   ],
+   "site": "https://yayin.radyomadyo.com:8014/stream",
+   "favicon": "",
+   "votes": 0,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-4a070d1f-2f41-42dc-adac-c2282788ddec",
+   "n": "RADYO ARMONİ",
+   "urls": [
+    "https://radyo.yayindakiler.com:4084/stream"
+   ],
+   "site": "http://afyonarmonihaber.com/",
+   "favicon": "",
+   "votes": 0,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 128,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-c241bf86-15ea-4a29-9ad1-1e8b385ff8d9",
+   "n": "RADYO BAŞKA",
+   "urls": [
+    "https://playerservices.streamtheworld.com/api/livestream-redirect/BASKA.mp3"
+   ],
+   "site": "https://playerservices.streamtheworld.com/api/livestream-redirect/BASKA.mp3",
+   "favicon": "",
+   "votes": 0,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "MP3",
+   "debit": 64,
+   "ok": "2026-10-21T04:45:45.675Z"
+  },
+  {
+   "id": "rb-72097333-8440-46c1-b9b9-45d45b1850f8",
+   "n": "Radyo Bi̇tli̇s Eren",
+   "urls": [
+    "https://sslyayin.netyayin.net/1313/stream"
+   ],
+   "site": "https://radyo.beu.edu.tr/",
+   "favicon": "https://radyo.beu.edu.tr/assets/custom/image/logo_beu_turkuaz.png",
+   "votes": 0,
+   "tags": [],
+   "ville": "",
+   "pays": "TR",
+   "codec": "AAC+",
+   "debit": 32,
+   "ok": "2026-10-21T04:45:45.675Z"
   }
  ]
 }
