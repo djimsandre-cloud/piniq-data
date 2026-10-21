@@ -47,9 +47,16 @@ async function joue(url, profondeur = 0){
   } catch(_){ return null; } finally { clearTimeout(t); }
 }
 
-// Liens à essayer pour une station : https d'abord, puis la version https des liens http
+// Adresse stable d'un flux : les liens zeno.fm / surfernetwork avec jeton (zt=, zs=) expirent au bout de quelques heures,
+// on revient donc à l'adresse publique https://stream.zeno.fm/<identifiant>
+function stable(u){
+  const m = /^https?:\/\/stream(?:-\d+)?\.(?:zeno\.fm|surfernetwork\.com)\/([a-z0-9]{8,})/i.exec(u);
+  if (m) return "https://stream.zeno.fm/" + m[1];
+  return /[?&](zt|zs)=/.test(u) ? "" : u;
+}
+// Liens à essayer pour une station : lien d'origine d'abord, https d'abord, puis la version https des liens http
 function liens(x){
-  const brut = [x.url_resolved, x.url].filter(u => typeof u === "string" && /^https?:\/\//.test(u));
+  const brut = [x.url, x.url_resolved].filter(u => typeof u === "string" && /^https?:\/\//.test(u)).map(stable).filter(Boolean);
   return [...new Set([...brut.filter(u => u.startsWith("https://")), ...brut.filter(u => u.startsWith("http://")).map(u => "https://" + u.slice(7))])].slice(0, 4);
 }
 
@@ -60,14 +67,14 @@ async function main(){
     ...["haiti", "haitian", "ayiti", "kreyol", "konpa", "kompa", "haitian music"].map(t => annuaire(`/json/stations/bytagexact/${encodeURIComponent(t)}?limit=500`)),
     annuaire("/json/stations/bylanguageexact/" + encodeURIComponent("haitian creole") + "?limit=500"),
     annuaire("/json/stations/bylanguageexact/kreyol?limit=500"),
-    ...["haiti", "ayiti", "haitienne", "haitien", "kreyol", "radyo", "konpa", "kompa"].map(n => annuaire(`/json/stations/byname/${encodeURIComponent(n)}?limit=300`)),
+    ...["haiti", "ayiti", "haitienne", "haitien", "kreyol", "konpa", "kompa", "lakay", "tele haiti"].map(n => annuaire(`/json/stations/byname/${encodeURIComponent(n)}?limit=300`)),
   ]);
   const vus = new Map();
   for (const x of listes.flat()) {
     if (!x || !x.stationuuid || vus.has(x.stationuuid)) continue;
     // Haïti : enregistrée en Haïti, ou radio de la diaspora dont le nom ou les mots-clés sont haïtiens
     const nom = x.name || "", tags = `${x.tags} ${x.language}`;
-    const haitienne = /ha[iï]ti|ayiti|krey[oò]l|radyo|konpa|kompa|port.?au.?prince|cap.?ha[iï]tien|jacmel|gona[iï]ves/i.test(nom)
+    const haitienne = /ha[iï]ti|ayiti|krey[oò]l|konpa|kompa|lakay|port.?au.?prince|cap.?ha[iï]tien|jacmel|gona[iï]ves|p[eé]tion.?ville/i.test(nom)
       || /ha[iï]ti|haitian|ayiti|krey[oò]l|cr[eé]ole ha[iï]tien/i.test(tags);
     const intrus = nom.trim().length < 4 || /islam|quran|coran|christmas|no[eë]l/i.test(`${nom} ${x.homepage}`)
       || /(^|\.)(rfi\.fr|laut\.fm|mp3islam\.com)/i.test(String(x.homepage).replace(/^https?:\/\//, "").split("/")[0]);
@@ -90,20 +97,22 @@ async function main(){
 
   // 3. Fusion avec la liste précédente (garde 3 jours), une station par nom
   const avant = existsSync(SORTIE) ? JSON.parse(readFileSync(SORTIE, "utf8")).stations || [] : [];
-  const parNom = new Map();
+  const parNom = new Map(), urlsPrises = new Set();
   for (const { x, ok } of bonnes.sort((a, b) => (b.x.votes || 0) - (a.x.votes || 0))) {
     const k = norm(x.name); if (k.length < 2) continue;
+    if (!parNom.has(k) && ok.every(o => urlsPrises.has(o.url))) continue;          // même flux qu'une station déjà retenue
     const s = parNom.get(k) || { id: "rb-" + x.stationuuid, n: x.name.trim().replace(/\s+/g, " "), urls: [], site: x.homepage || "",
       favicon: (x.favicon || "").replace(/^http:/, "https:"), votes: x.votes || 0, tags: (x.tags || "").split(",").filter(Boolean).slice(0, 5),
       ville: x.state || "", pays: x.countrycode || "", codec: x.codec || "", debit: x.bitrate || ok[0].bitrate || 0 };
-    for (const o of ok) if (!s.urls.includes(o.url)) s.urls.push(o.url);
+    for (const o of ok) if (!s.urls.includes(o.url)) { s.urls.push(o.url); urlsPrises.add(o.url); }
     s.ok = new Date(MAINTENANT).toISOString();
     parNom.set(k, s);
   }
   let gardees = 0;
   for (const s of avant) {
     const k = norm(s.n);
-    if (!parNom.has(k) && s.ok && MAINTENANT - Date.parse(s.ok) < GARDE) { parNom.set(k, s); gardees++; }
+    s.urls = (s.urls || []).map(stable).filter(Boolean);
+    if (!parNom.has(k) && s.urls.length && !s.urls.some(u => urlsPrises.has(u)) && s.ok && MAINTENANT - Date.parse(s.ok) < GARDE) { parNom.set(k, s); gardees++; }
   }
   const stations = [...parNom.values()].sort((a, b) => b.votes - a.votes || a.n.localeCompare(b.n));
   mkdirSync("radio", { recursive: true });
