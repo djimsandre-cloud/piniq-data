@@ -1,0 +1,15 @@
+URL https://zeno.fm/sitemap.xml
+STATUS 404
+TYPE application/json
+CORS null
+
+{
+  "error": true,
+  "url": "https://zeno.fm/sitemap.xml",
+  "statusCode": 404,
+  "statusMessage": "Page not found: /sitemap.xml",
+  "message": "Page not found: /sitemap.xml",
+  "data": {
+    "path": "/sitemap.xml"
+  }
+}

@@ -1,0 +1,15 @@
+URL https://zeno.fm/country/haiti/
+STATUS 404
+TYPE application/json
+CORS null
+
+{
+  "error": true,
+  "url": "https://zeno.fm/country/haiti/",
+  "statusCode": 404,
+  "statusMessage": "Page not found: /country/haiti/",
+  "message": "Page not found: /country/haiti/",
+  "data": {
+    "path": "/country/haiti/"
+  }
+}

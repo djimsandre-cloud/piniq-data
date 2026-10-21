@@ -1,0 +1,22 @@
+URL https://zeno.fm/robots.txt
+STATUS 200
+TYPE text/plain; charset=utf-8
+CORS null
+
+User-agent: *
+Allow: /ads.txt
+Allow: /app-ads.txt
+Allow: /bible/languages/
+Allow: /bible/*/testament/
+Allow: /*/bible/languages/
+Allow: /*/bible/*/testament/
+Disallow: /api/
+Disallow: /wp-admin/
+Disallow: /wp-json/
+Disallow: /*query=
+Disallow: /bible/*/*/
+Disallow: /*/bible/*/*/
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+Sitemap: https://zeno.fm/sitemap-index.xml
+Sitemap: https://zeno.fm/sitemap-pages.xml
