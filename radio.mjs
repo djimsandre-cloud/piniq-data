@@ -60,6 +60,52 @@ function liens(x){
   return [...new Set([...brut.filter(u => u.startsWith("https://")), ...brut.filter(u => u.startsWith("http://")).map(u => "https://" + u.slice(7))])].slice(0, 4);
 }
 
+// Zeno.fm (hébergeur de très nombreuses radios haïtiennes) : on lit les pages publiques des stations
+// (autorisées par son robots.txt ; l'API interne /api/ n'est jamais utilisée). Point de départ : le plan du site
+// et quelques stations haïtiennes connues, puis on suit les « stations similaires » des pages haïtiennes.
+const ZENO_DEPART = ["radiomega-haiti", "radio-shalom-haiti", "cross-fm-haiti", "radio-ibo-98-5fm", "impact-fm-haiti-qwqn", "radio-miracle-fm-haiti",
+  "radio-tele-haiti-telehaiti-com", "radio-cemes-haiti", "rve-haiti", "radio-oxygene-haiti", "radio-canalplushaiti", "RadioTelevisionCaraibes",
+  "radio-tele-ginen", "radio-ginen", "radio-vision-2000-sud-est", "radio-tele-zenith", "radio-tele-pyramide", "radio-galaxie-tunein", "vouzan-fm"];
+const MOTS_HT = /ha[iï]ti|ayiti|krey[oò]l|konpa|kompa|lakay|ginen|cap-?haitien|jacmel|port-?au-?prince|petion-?ville|gonaives|hinche|okap/i;
+async function texte(url){ try { const r = await fetch(url, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) }); return r.ok ? await r.text() : ""; } catch(_){ return ""; } }
+function pageZeno(html){
+  const m = /id="__NUXT_DATA__"[^>]*>([\s\S]*?)<\/script>/.exec(html); if (!m) return null;
+  let a; try { a = JSON.parse(m[1]); } catch(_){ return null; }
+  const v = i => (typeof i === "number" && i >= 0 && i < a.length) ? a[i] : i;
+  const st = a.find(x => x && typeof x === "object" && !Array.isArray(x) && "streamURL" in x); if (!st) return null;
+  const langues = [].concat(v(st.languages) || []).map(v).map(x => String(x).trim());
+  const logo = v(st.logoImage), logoUrl = typeof logo === "string" ? logo : (logo && typeof logo === "object" ? v(logo.src) || v(logo.url) : "");
+  const voisins = a.filter(x => x && typeof x === "object" && !Array.isArray(x) && "slug" in x && "title" in x).map(x => String(v(x.slug)));
+  return { titre: String(v(st.title) || "").trim(), flux: String(v(st.streamURL) || ""), pays: String(v(st.country) || ""), langues, genre: String(v(st.genre) || ""),
+    slug: String(v(st.slug) || ""), logo: typeof logoUrl === "string" && logoUrl.startsWith("https://") ? logoUrl : "", voisins };
+}
+async function zeno(){
+  const depart = new Set(ZENO_DEPART);
+  // plan du site : toutes les stations dont l'adresse évoque Haïti
+  const plan = await texte("https://zeno.fm/sitemap-stations.xml");
+  let locs = [...plan.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  const sous = locs.filter(l => /sitemap.*\.xml/.test(l)).slice(0, 30);
+  for (const l of sous) locs.push(...[...(await texte(l)).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]));
+  for (const l of locs) { const m = /zeno\.fm\/radio\/([^/]+)\/?$/.exec(l); if (m && MOTS_HT.test(m[1])) depart.add(m[1]); }
+  const file = [...depart], vus = new Set(file), trouves = []; let pages = 0;
+  async function ouvrier(){
+    while (file.length && pages < 700) {
+      const slug = file.shift(); pages++;
+      const p = pageZeno(await texte(`https://zeno.fm/radio/${encodeURIComponent(slug)}/`));
+      await sommeil(150);
+      if (!p || !p.flux) continue;
+      const haitienne = /haiti/i.test(p.pays) || p.langues.some(l => /haitian|cr[eé]ole ha|krey/i.test(l)) || MOTS_HT.test(p.titre);
+      if (!haitienne) continue;
+      trouves.push({ stationuuid: "zeno-" + p.slug, name: p.titre, url: p.flux, url_resolved: "", homepage: `https://zeno.fm/radio/${p.slug}/`, favicon: p.logo,
+        votes: 0, tags: p.genre, countrycode: /haiti/i.test(p.pays) ? "HT" : "", state: "", language: p.langues.join(",") });
+      for (const s of p.voisins) if (!vus.has(s)) { vus.add(s); file.push(s); }
+    }
+  }
+  await Promise.all(Array.from({ length: 4 }, ouvrier));
+  console.log(`::notice::Zeno.fm : ${pages} pages lues, ${trouves.length} radios haïtiennes trouvées`);
+  return trouves;
+}
+
 // Stations de la liste fixe de RadioPam : on vérifie leur lien, et on leur trouve des liens de secours
 const FIXES = [
   { id: "caraibes", q: "Caraibes", c: "HT", url: "https://stream.zeno.fm/54k0v7x14neuv" }, { id: "scoop", q: "Scoop FM", c: "HT" },
@@ -95,7 +141,9 @@ async function main(){
     annuaire("/json/stations/bylanguageexact/kreyol?limit=500"),
     ...["haiti", "ayiti", "haitienne", "haitien", "kreyol", "konpa", "kompa", "lakay", "tele haiti"].map(n => annuaire(`/json/stations/byname/${encodeURIComponent(n)}?limit=300`)),
   ]);
+  const deZeno = await zeno();
   const vus = new Map();
+  for (const x of deZeno) vus.set(x.stationuuid, x);                   // déjà reconnues haïtiennes par leur page
   for (const x of listes.flat()) {
     if (!x || !x.stationuuid || vus.has(x.stationuuid)) continue;
     // Haïti : enregistrée en Haïti, ou radio de la diaspora dont le nom ou les mots-clés sont haïtiens
