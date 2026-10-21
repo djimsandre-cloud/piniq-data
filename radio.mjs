@@ -42,7 +42,8 @@ async function joue(url, profondeur = 0){
     const lecteur = r.body.getReader(); let recu = 0;
     while (recu < 24576) { const { value, done } = await lecteur.read(); if (done) break; recu += value.length; }
     lecteur.cancel().catch(() => {});
-    return recu >= 24576 ? { url: fin, type, bitrate: Number(r.headers.get("icy-br")) || 0 } : null;
+    // on garde le lien d'origine : l'adresse finale contient souvent un jeton qui expire (zeno.fm)
+    return recu >= 24576 ? { url, type, bitrate: Number(r.headers.get("icy-br")) || 0 } : null;
   } catch(_){ return null; } finally { clearTimeout(t); }
 }
 
@@ -59,13 +60,18 @@ async function main(){
     ...["haiti", "haitian", "ayiti", "kreyol", "konpa", "kompa", "haitian music"].map(t => annuaire(`/json/stations/bytagexact/${encodeURIComponent(t)}?limit=500`)),
     annuaire("/json/stations/bylanguageexact/" + encodeURIComponent("haitian creole") + "?limit=500"),
     annuaire("/json/stations/bylanguageexact/kreyol?limit=500"),
-    ...["haiti", "ayiti", "haitienne", "kreyol"].map(n => annuaire(`/json/stations/byname/${encodeURIComponent(n)}?limit=300`)),
+    ...["haiti", "ayiti", "haitienne", "haitien", "kreyol", "radyo", "konpa", "kompa"].map(n => annuaire(`/json/stations/byname/${encodeURIComponent(n)}?limit=300`)),
   ]);
   const vus = new Map();
   for (const x of listes.flat()) {
     if (!x || !x.stationuuid || vus.has(x.stationuuid)) continue;
-    const pays = x.countrycode === "HT", lie = /ha[iï]ti|ayiti|kreyol|krey[oò]l|konpa|kompa|port.?au.?prince|cap.?ha[iï]tien|jacmel|gona[iï]ves/i.test(`${x.name} ${x.tags} ${x.language} ${x.homepage}`);
-    if (pays || lie) vus.set(x.stationuuid, x);
+    // Haïti : enregistrée en Haïti, ou radio de la diaspora dont le nom ou les mots-clés sont haïtiens
+    const nom = x.name || "", tags = `${x.tags} ${x.language}`;
+    const haitienne = /ha[iï]ti|ayiti|krey[oò]l|radyo|konpa|kompa|port.?au.?prince|cap.?ha[iï]tien|jacmel|gona[iï]ves/i.test(nom)
+      || /ha[iï]ti|haitian|ayiti|krey[oò]l|cr[eé]ole ha[iï]tien/i.test(tags);
+    const intrus = nom.trim().length < 4 || /islam|quran|coran|christmas|no[eë]l/i.test(`${nom} ${x.homepage}`)
+      || /(^|\.)(rfi\.fr|laut\.fm|mp3islam\.com)/i.test(String(x.homepage).replace(/^https?:\/\//, "").split("/")[0]);
+    if ((x.countrycode === "HT" || haitienne) && !intrus) vus.set(x.stationuuid, x);
   }
   const candidats = [...vus.values()];
   console.log(`::notice::${candidats.length} stations candidates dans l'annuaire`);
