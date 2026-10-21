@@ -115,7 +115,7 @@ const FIXES = [
   { id: "inter", q: "France Inter", c: "FR", url: "https://icecast.radiofrance.fr/franceinter-midfi.mp3" }, { id: "info", q: "franceinfo", c: "FR", url: "https://icecast.radiofrance.fr/franceinfo-midfi.mp3" },
   { id: "fip", q: "FIP", c: "FR", url: "https://icecast.radiofrance.fr/fip-midfi.mp3" }, { id: "culture", q: "France Culture", c: "FR", url: "https://icecast.radiofrance.fr/franceculture-midfi.mp3" },
   { id: "mouv", q: "Mouv", c: "FR", url: "https://icecast.radiofrance.fr/mouv-midfi.mp3" },
-  { id: "rfi", q: "RFI Monde", c: "FR" }, { id: "rtl", q: "RTL", c: "FR" }, { id: "europe1", q: "Europe 1", c: "FR" }, { id: "nrj", q: "NRJ", c: "FR" },
+  { id: "rfi", q: "RFI Monde", c: "FR" }, { id: "rtl", q: "RTL", c: "FR", essais: ["https://streamer-01.rtl.fr/rtl-1-44-128", "https://streamer-02.rtl.fr/rtl-1-44-128", "https://streamer-03.rtl.fr/rtl-1-44-128", "https://icecast.rtl.fr/rtl-1-44-128", "https://streaming.radio.rtl.fr/rtl-1-44-128"] }, { id: "europe1", q: "Europe 1", c: "FR" }, { id: "nrj", q: "NRJ", c: "FR" },
   { id: "nostalgie", q: "Nostalgie", c: "FR" }, { id: "skyrock", q: "Skyrock", c: "FR" }, { id: "fun", q: "Fun Radio", c: "FR" },
 ];
 async function liensFixes(){
@@ -124,7 +124,7 @@ async function liensFixes(){
     const trouves = await annuaire(`/json/stations/search?name=${encodeURIComponent(f.q)}&countrycode=${f.c}&order=votes&reverse=true&limit=12`);
     const k = norm(f.q);
     const proches = trouves.filter(x => norm(x.name).startsWith(k) || norm(x.name) === k || norm(x.name).includes(k)).slice(0, 6);
-    const essais = [...new Set([f.url, ...proches.flatMap(liens)].filter(Boolean))].slice(0, 8);
+    const essais = [...new Set([f.url, ...(f.essais || []), ...proches.flatMap(liens)].filter(Boolean))].slice(0, 10);
     const ok = [];
     for (const u of essais) { if (ok.length >= 3) break; const r = await joue(u); if (r && !ok.includes(r.url)) ok.push(r.url); }
     res[f.id] = { urls: ok, principal: f.url ? ok.includes(f.url) : null };
