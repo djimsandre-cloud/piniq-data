@@ -1,6 +1,0 @@
-URL https://api.zeno.fm/mounts/metadata/subscribe/54k0v7x14neuv
-STATUS 200
-TYPE text/event-stream;charset=UTF-8
-CORS null
-
-(flux)
