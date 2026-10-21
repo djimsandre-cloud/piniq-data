@@ -1,0 +1,675 @@
+{
+ "maj": "2026-10-21T04:43:23.881Z",
+ "testees": 51,
+ "stations": [
+  {
+   "id": "rb-6b0c6c56-9f8e-49dd-a921-23dfe98c4bfc",
+   "n": "RADIO BBC NEWS HAITI",
+   "urls": [
+    "https://stream-179.surfernetwork.com/hpdayz31vd0uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJocGRheXozMXZkMHV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlhiblJweENsUmdhdWRBZXVJOS1hZUEiLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.15rDxhybgs-oz3e4QnmN0OXfBcPHurhI2RvWAiF9_oU"
+   ],
+   "site": "http://www.bbcnewshaiti.com/",
+   "favicon": "https://www.haytinews.com/wp-content/uploads/2023/08/cropped-drapeau-icone-180x180.png",
+   "votes": 2082,
+   "tags": [
+    "musuc",
+    "news"
+   ],
+   "ville": "p aup",
+   "pays": "HT",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-3fb39881-cf61-11e8-a54a-52543be04c81",
+   "n": "KONPA MIX RADIO!",
+   "urls": [
+    "https://das-edge93-live365-dal05.cdnstream.com/a15951"
+   ],
+   "site": "http://konpamix.com/",
+   "favicon": "https://www.ipower.com/images/icons/apple-touch-icons/apple-touch-icon-ipower.png",
+   "votes": 1646,
+   "tags": [],
+   "ville": "Croix-des-Bouquets",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-9a2c072e-fda1-4b31-ae42-599fd6eb2902",
+   "n": "Caraibes FM",
+   "urls": [
+    "https://stream-283.surfernetwork.com/54k0v7x14neuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI1NGswdjd4MTRuZXV2IiwiaG9zdCI6InN0cmVhbS0yODMuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Im1BTzJCNTZiUTZhdGhIRWNFUEdmbnciLCJpYXQiOjE3OTI1NTc4MDUsImV4cCI6MTc5MjU1Nzg2NX0.zdxEnd6ZghqxI44NT0Q9w3T1ZPa8xMBTSgmJQ4CJa9M",
+    "https://stream-283.surfernetwork.com/avr8uenbm1duv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJhdnI4dWVuYm0xZHV2IiwiaG9zdCI6InN0cmVhbS0yODMuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlNhX3p4RWlzU0dpT0lPeGxtam1wN0EiLCJpYXQiOjE3OTI1NTc4MDUsImV4cCI6MTc5MjU1Nzg2NX0.B0g8mt2aQMgCe-wZAUr0FI4G3omPyf3u-Mq2sdC49zA"
+   ],
+   "site": "https://www.radiotelecaraibes.com/",
+   "favicon": "https://www.radiotelecaraibes.com/wp-content/uploads/2024/01/RTVC-Logo_Blanc.png",
+   "votes": 1121,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-bf6d4aec-27d6-4ae8-845e-00449488d947",
+   "n": "Radio Vision 2000 Sud Est 90.9 FM",
+   "urls": [
+    "https://stream-179.surfernetwork.com/xmyroy1iu80uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4bXlyb3kxaXU4MHV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImVBdXY1bWxZVFd1RXg5TmFjbWl4ZGciLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.1DdaksuwoMZ0us9Xt9GSuFtl03jimYRjckKeB065BFg"
+   ],
+   "site": "https://www.radiovision2000sudest.com/",
+   "favicon": "",
+   "votes": 742,
+   "tags": [
+    "music variety"
+   ],
+   "ville": "jacmel ",
+   "pays": "HT",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-784881e9-0835-4f41-8487-d5da19c709b9",
+   "n": "Radio St Charles FM",
+   "urls": [
+    "https://stream-175.surfernetwork.com/fd9kyc28dchvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJmZDlreWMyOGRjaHZ2IiwiaG9zdCI6InN0cmVhbS0xNzUuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Ik1ORVFhay12VGItSUdyR213VVJreEEiLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.Mt5ifsjfZnaWcyPWML90XFs8SrUaEWfgN079hOL4J44"
+   ],
+   "site": "http://lejournaliste.centerblog.net/",
+   "favicon": "https://c.sd1.fr/favicon.png",
+   "votes": 630,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-07990ba9-401a-4059-b0fc-a01e873ba85c",
+   "n": "Radio Television Supreme (RTVS)",
+   "urls": [
+    "https://stream-175.surfernetwork.com/bdkwbv3rt98uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJiZGt3YnYzcnQ5OHV2IiwiaG9zdCI6InN0cmVhbS0xNzUuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjJBaTNsR3dtUXFldnFyY2VKLVJqa1EiLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.C8KkJmom4AZ_IfoAh4okuoHjjyhr-i3Q7ezYZrKOnQ4"
+   ],
+   "site": "https://www.zeno.fm/radio/radio-television-supreme/",
+   "favicon": "",
+   "votes": 533,
+   "tags": [],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-25c64b81-7d1d-4f1f-aed6-03a312073341",
+   "n": "Intermix 93.1 FM",
+   "urls": [
+    "https://studio.sitegenial.com/9310/stream"
+   ],
+   "site": "https://www.radiointermix.com/",
+   "favicon": "https://www.radiointermix.com/logo.png",
+   "votes": 410,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "AAC+",
+   "debit": 64,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-4cc9d5e8-a126-479d-9c36-e775baf6a2ff",
+   "n": "RFI",
+   "urls": [
+    "https://rfimonde-96k.ice.infomaniak.ch/rfimonde-96k.mp3"
+   ],
+   "site": "https://www.rfi.fr/",
+   "favicon": "",
+   "votes": 245,
+   "tags": [
+    "news"
+   ],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 96,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-2c833ee4-1104-40eb-92d6-994fc9b0edf9",
+   "n": "Ananda Marga Haiti",
+   "urls": [
+    "https://stream-177.surfernetwork.com/vm8mgn3eewzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ2bThtZ24zZWV3enV2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjlRS0VsSXoyUTVLVjQ2djdqZWpUaVEiLCJpYXQiOjE3OTI1NTc4MDUsImV4cCI6MTc5MjU1Nzg2NX0.4gp5MXYevJ2BA94bOrKmNDzvDMMS1czS-OOdxpO3eMI"
+   ],
+   "site": "https://www.anandamarga.org/haiti/",
+   "favicon": "",
+   "votes": 222,
+   "tags": [
+    "mantra",
+    "spiritual discourses"
+   ],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-f288200c-0093-4a5f-8aac-9e043879b7d9",
+   "n": "Radio Humilite",
+   "urls": [
+    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkRKYzFRbUJxUzBlSHRHT2lLOWlfY3ciLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.Ve4q9_-0Q8J1_hT4q18ZeseBo9s9caOTKQBy0H3s70E",
+    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImxmbHpTZVJxUlZPSnVUd2VVRnVuNWciLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.4tO9vc_qDoUdVspR5lgd82hdpPfZgWGvKbkoa_vc9Oc",
+    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImptVW9fTzEtU1gyOFpjc21GdjA1a0EiLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.4_Lb_eFYN4gvTuvf21QrOi_I3uDV5PmCyvz2fBECEno",
+    "https://stream-286.surfernetwork.com/qhlllaz21cmuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxaGxsbGF6MjFjbXV2IiwiaG9zdCI6InN0cmVhbS0yODYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Ii1hamZnWXYxVGw2THp2ajM1dTdrQ1EiLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.oldPhJwjwjqbYcJYDCE0osbGePzpYhemkWbn32vzU-Y"
+   ],
+   "site": "https://radio-humilite-2-3-4.e-monsite.com/",
+   "favicon": "https://static.e-monsite.com/manager/e-monsite.com/im/favicon.png",
+   "votes": 222,
+   "tags": [
+    "cultural news",
+    "gospel music",
+    "sports news"
+   ],
+   "ville": "carrefour",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-3d51e3ed-bea9-4b68-a935-378b96e4256c",
+   "n": "Radio Kiskeya",
+   "urls": [
+    "https://stream-288.surfernetwork.com/82q102t62neuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI4MnExMDJ0NjJuZXV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Im5WRHFhVWNSUUtDN2M5NzROMnZmNWciLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.twjll-eIMBhuwoiCnHbVyp7UXqqOAJ-1b8XXFrVPAjk",
+    "https://stream-288.surfernetwork.com/82q102t62neuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI4MnExMDJ0NjJuZXV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkVLQnhobG4tUURDRTZsVTNkOXZybkEiLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.N8gi7MKTziaThvWg9r_8E0bpmJh3auBPeATHCOsU0_A"
+   ],
+   "site": "https://zeno.fm/radio/radio-kiskeya/",
+   "favicon": "",
+   "votes": 214,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-48e1242a-45f8-4263-86bf-21d4886e42ab",
+   "n": "Radio Jeanvonvon",
+   "urls": [
+    "https://stream-176.surfernetwork.com/28zya4hubwzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIyOHp5YTRodWJ3enV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkN0SEN2UzVsU1UyV0tQU3VUMXVOV1EiLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.FD-5E9UYSqwmZ46uV5we8zC8yw0tOmtm6qKnWO_T5dY"
+   ],
+   "site": "https://onlineradiobox.com/ht/jeanvonvon/",
+   "favicon": "null",
+   "votes": 209,
+   "tags": [
+    "ht creole"
+   ],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-26d6622a-bc5c-444f-bf89-9779df88b20a",
+   "n": "Big Reggae Mix",
+   "urls": [
+    "https://ais-sa2.cdnstream1.com/2294_128.mp3"
+   ],
+   "site": "https://www.bigreggaemix.com/",
+   "favicon": "",
+   "votes": 161,
+   "tags": [],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-4aac09d9-cc2b-4a3b-980b-1dbe02962bfd",
+   "n": "Radio Boursiquot's FM 101.7",
+   "urls": [
+    "https://stream-177.surfernetwork.com/yoz610evcpltv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ5b3o2MTBldmNwbHR2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Iks5Y0lWUmc1U04tOWxwZ24xTi1uemciLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.73Ke9CmWt7b804Dl24BmB7uEPY5RUWfCNnJf1YGG6gQ"
+   ],
+   "site": "https://www.radioboursiquotfm.com/",
+   "favicon": "",
+   "votes": 150,
+   "tags": [
+    "musica",
+    "news",
+    "sport"
+   ],
+   "ville": "jacmel ",
+   "pays": "HT",
+   "codec": "AAC",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-8cddbb0c-73e6-4290-b52b-fdf391e8abef",
+   "n": "Radyo Tipiti",
+   "urls": [
+    "https://a8.asurahosting.com:7530/stream"
+   ],
+   "site": "https://tipiti.biz/",
+   "favicon": "https://tipiti.biz/site/wp-content/uploads/2019/10/favicon.gif",
+   "votes": 144,
+   "tags": [
+    "world music"
+   ],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-3a140fb2-9e3e-4e21-9609-1170bb2e255b",
+   "n": "Guadeloupe France Télévision",
+   "urls": [
+    "https://guadeloupe.ice.infomaniak.ch/guadeloupe-128.mp3"
+   ],
+   "site": "https://caribshebdo.wordpress.com/2020/03/30/guadeloupe-1ere-radio-live/",
+   "favicon": "https://s1.wp.com/i/favicon.ico",
+   "votes": 139,
+   "tags": [
+    "info",
+    "kompa",
+    "tradition",
+    "zouk"
+   ],
+   "ville": "Guadeloupe",
+   "pays": "FR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-0842377e-9c21-4567-a326-6303a48b0ea1",
+   "n": "FPP Fréquence Paris Plurielle rfpp",
+   "urls": [
+    "https://direct.rfpp.net/fpp.mp3"
+   ],
+   "site": "https://rfpp.net/",
+   "favicon": "https://rfpp.net/favicon.ico",
+   "votes": 113,
+   "tags": [
+    "political talk",
+    "politique",
+    "radio associative",
+    "radio libre",
+    "voix des sans voix"
+   ],
+   "ville": "",
+   "pays": "FR",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-4688eb3a-a407-4360-aef6-ac823bbae240",
+   "n": "WSSR Sector Seven Radio",
+   "urls": [
+    "https://broadcast.wssr.stream/radio/8000/radio.mp3"
+   ],
+   "site": "https://wssr.stream/",
+   "favicon": "",
+   "votes": 105,
+   "tags": [
+    "deep house",
+    "deep techno",
+    "drum and bass",
+    "dub",
+    "dub reggae"
+   ],
+   "ville": "New York",
+   "pays": "US",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-8fefe017-c849-4043-86a2-d42a16a24392",
+   "n": "Men Konpa",
+   "urls": [
+    "https://stream.radio.co/s84b4fb736/listen"
+   ],
+   "site": "http://www.menkonpa.com/",
+   "favicon": "",
+   "votes": 104,
+   "tags": [],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 192,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-64f7fd84-fd02-4a27-acaa-98e264211d4a",
+   "n": "Radio Jamesen Show",
+   "urls": [
+    "https://stream-176.surfernetwork.com/aparrwtkwyzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJhcGFycnd0a3d5enV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Il9PdUNOS3VNUTRLVlFiVnJUUmw5VHciLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.6rmZe7VhYZqqzJ2bEAP0_vqzJoMC9D4tAxcOnNw9jVU",
+    "https://stream-176.surfernetwork.com/aparrwtkwyzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJhcGFycnd0a3d5enV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImU2NDdxTTNVUVJ1MTlYYXZ4VFR2OVEiLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.HXoOQ7WHNmfXdaD3o0O6Bxx2ZKKAk006Ql5CG5-zWB4"
+   ],
+   "site": "https://www.facebook.com/JamesenShow",
+   "favicon": "https://www.facebook.com/JamesenShow",
+   "votes": 83,
+   "tags": [
+    "variety"
+   ],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-137fa962-fb10-4286-894e-6e6ed780883c",
+   "n": "Radi Macaya",
+   "urls": [
+    "https://stream-288.surfernetwork.com/e7s1qpe5d4duv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJlN3MxcXBlNWQ0ZHV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlBqZ1FKRExhUW9TZFRFNFo5Yl9FVXciLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.rpWVTWvLCVYmx2HfaL7qobhVGvg8XRNcjJQyqp6FZcw"
+   ],
+   "site": "http://www.radiomacaya.com/",
+   "favicon": "",
+   "votes": 61,
+   "tags": [
+    "news"
+   ],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 64,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-b34a34e3-2fe2-4836-b906-f22c435b9cf6",
+   "n": "Radio 4VEH",
+   "urls": [
+    "https://stream-289.surfernetwork.com/0zef35h1my5tv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIwemVmMzVoMW15NXR2IiwiaG9zdCI6InN0cmVhbS0yODkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Il9kYk5RUGZxU2JHeWhCaUtMU19nX2ciLCJpYXQiOjE3OTI1NTc4MDUsImV4cCI6MTc5MjU1Nzg2NX0.qDGqfWN5_Q1gkbLljhb-xCyuGGKJYWvPT2Cj4gtWo-8"
+   ],
+   "site": "https://radio.ht/4veh/",
+   "favicon": "",
+   "votes": 61,
+   "tags": [],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-a2a84382-5ab0-4846-83c4-ea0d40b78c35",
+   "n": "Radio Africa 1804",
+   "urls": [
+    "https://radioafrica1804.radioca.st/stream?fbclid=IwZXh0bgNhZW0CMTEAAR3p98dzdsZrwtqWOVDYxmh47DPWz5zJPwesnrlulZrOzEg2smZ_DvXeoaE_aem_52V7iXQ5XljK"
+   ],
+   "site": "https://radioafrica1804.radioca.st/stream?fbclid=IwZXh0bgNhZW0CMTEAAR3p98dzdsZrwtqWOVDYxmh47DPWz5zJPwesnrlulZrOzEg2smZ_DvXeoaE_aem_52V7iXQ5XljK",
+   "favicon": "",
+   "votes": 54,
+   "tags": [],
+   "ville": "Florida",
+   "pays": "US",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-5d97af74-e4df-4ac4-bec4-002d26f1eadd",
+   "n": "Radio Bonpounou",
+   "urls": [
+    "https://centova.wlservices.org/proxy/wiszuaec/stream/"
+   ],
+   "site": "https://www.bonpounou.com/music.html",
+   "favicon": "",
+   "votes": 54,
+   "tags": [],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-9090b5f8-a2d3-4774-ac27-776676632c06",
+   "n": "Radio Scoop FM",
+   "urls": [
+    "https://studio.sitegenial.com/8006/stream"
+   ],
+   "site": "https://www.scoopfmhaiti.com/",
+   "favicon": "",
+   "votes": 46,
+   "tags": [
+    "talk show"
+   ],
+   "ville": "Port-au-Prince",
+   "pays": "HT",
+   "codec": "AAC+",
+   "debit": 64,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-7e9e4c3f-9692-4c62-af52-6437ad9cbbc1",
+   "n": "Antilles Média - Kompa Gold",
+   "urls": [
+    "https://antillesmedia.pro-fhi.net/antillesmediakompa"
+   ],
+   "site": "https://ca.radio.net/s/antillesmediakompa",
+   "favicon": "https://ca.radio.net/175/antillesmediakompa.jpeg?version=d9d3a147b4e152f7ee65935d214fa0b8e0878527",
+   "votes": 34,
+   "tags": [
+    "antilles",
+    "carribean",
+    "guadeloupe",
+    "kompa",
+    "stereo"
+   ],
+   "ville": "",
+   "pays": "GP",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-86c03473-3076-496e-b458-1ea27bc44f50",
+   "n": "Abdulbasit Abdulsamad",
+   "urls": [
+    "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+   ],
+   "site": "https://mp3islam.com/",
+   "favicon": "null",
+   "votes": 30,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "AAC",
+   "debit": 64,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-a9a38979-c8cc-4200-9d4a-272ff394a3a6",
+   "n": "hhh",
+   "urls": [
+    "https://jazzchristmas.stream.laut.fm/jazzchristmas?t302=2023-12-19_08-05-17&uuid=43cac575-4695-4eca-baf1-5d2f18f5897b"
+   ],
+   "site": "https://jazzchristmas.stream.laut.fm/jazzchristmas?t302=2023-12-19_08-05-17&uuid=43cac575-4695-4eca-baf1-5d2f18f5897b",
+   "favicon": "",
+   "votes": 29,
+   "tags": [],
+   "ville": "Napoli",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-e4576123-9cb3-4371-a391-169a3e422a73",
+   "n": "RHAI",
+   "urls": [
+    "https://stream-288.surfernetwork.com/mbd2kns9m5zuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJtYmQya25zOW01enV2IiwiaG9zdCI6InN0cmVhbS0yODguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlJUZGtQanJwUU1PYmM2cW9pbm4xS2ciLCJpYXQiOjE3OTI1NTc4MDcsImV4cCI6MTc5MjU1Nzg2N30.CANBeiDMqU4tDEenTIg7vewrMozZ39UtFAYl_YXOtqU"
+   ],
+   "site": "https://radiohaitiameriqueinternationale.com/",
+   "favicon": "",
+   "votes": 24,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-7d827f0e-85bc-4601-80d4-77d4391f60cf",
+   "n": "📻 Radio Shatta Movement",
+   "urls": [
+    "https://stream-178.surfernetwork.com/pbnss8oxyluuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJwYm5zczhveHlsdXV2IiwiaG9zdCI6InN0cmVhbS0xNzguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InlwamNUNE9WUi1pVTZHWDNqeGYySHciLCJpYXQiOjE3OTI1NTc4MDgsImV4cCI6MTc5MjU1Nzg2OH0.Sa6oShRGvjhksV7LWzfzKelW-zeXcqG5xPSuMQGhrVo"
+   ],
+   "site": "https://medias.karibshebdo.info/2026/02/radio-shatta-movement.html",
+   "favicon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYLXJAYHBzdwHfwGQpngYFIYcBg2ffA4isj0w6Fm8-r1dr-8TbU8n_r4VCnSYAhwYbAJblR4GVkyssmcihOj2FxCPeqIYOVXvtRSG9hb8mzMH-tm0mMQHl6qA4mjZXnViUEYpjs73jGquSf4NpjPlzdl0CPVCawDOfRl6jc-uK_dnTWWWj8mfnudZf1w/s1600/Capture%20d%E2%80%99%C3%A9cran_2026-02-06_08-23-41.png",
+   "votes": 18,
+   "tags": [
+    "kompa",
+    "konpa",
+    "shatta",
+    "zouk"
+   ],
+   "ville": "France",
+   "pays": "GP",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-033c7983-31f9-4470-a582-fa70dee478d3",
+   "n": "Radio Bien Etre FM",
+   "urls": [
+    "https://stream-176.surfernetwork.com/zxg8t9gr3f8uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ6eGc4dDlncjNmOHV2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkRFbVJ4YjZWUnN1QU5BNTB2V0kteFEiLCJpYXQiOjE3OTI1NTc4MDYsImV4cCI6MTc5MjU1Nzg2Nn0.8dsFb_b1j9NCgZHfGgZYTb6BMjPbNHpXUu0pf3UV81s"
+   ],
+   "site": "https://www.radiobienetre.com/",
+   "favicon": "",
+   "votes": 17,
+   "tags": [
+    "caribbean",
+    "contemporary music",
+    "pop"
+   ],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-a8e146d3-0c2e-4519-9018-86e0862d7bca",
+   "n": "📻 KLM FM",
+   "urls": [
+    "https://us3new.listen2myradio.com:2199/listen.php?port=8117"
+   ],
+   "site": "https://radiosweb.karibshebdo.info/radios-web/klm-fm",
+   "favicon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTw3lsCbI8ZcwYsEss5GhURlItGfxXLAeI0kDc5D_dOyc_yS8XrLoPJaUy8wlvdJem90NpWW65skgJCwlSCtBWaGH3Mw7CIm3F1PlaKvimGM2skZIUutxYWplI8wG-emyVONIMby2rc8IfAc017YEs3RWwwFdXpUFqONUABApu3JL36HW3lgJ5ubhL/s1600/Capture%20d%E2%80%99%C3%A9cran_2024-12-12_11-09-39.png",
+   "votes": 4,
+   "tags": [
+    "kompa",
+    "konpa"
+   ],
+   "ville": "",
+   "pays": "FR",
+   "codec": "MP3",
+   "debit": 0,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-ce516ac3-13e2-4259-88a0-69f033593818",
+   "n": "Radyo ACICORP",
+   "urls": [
+    "https://radio.acicorpinc.com/listen/radio/radio.mp3"
+   ],
+   "site": "https://www.acicorpinc.com/radyo/",
+   "favicon": "https://www.acicorpinc.com/radyo/icon-512.png",
+   "votes": 1,
+   "tags": [
+    "adventist",
+    "christian",
+    "community",
+    "education",
+    "gospel"
+   ],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 192,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-5d52d204-c77e-4718-b9ca-d52788f088d3",
+   "n": "Romona France",
+   "urls": [
+    "https://stream.flavorjamz.com/;stream.mp3"
+   ],
+   "site": "https://flavorjamz.com/radio",
+   "favicon": "https://flavorjamz.com/images/RadioLogo.png",
+   "votes": 1,
+   "tags": [
+    "afrobeats",
+    "amapiano",
+    "bouyon",
+    "caribbean",
+    "dancehall"
+   ],
+   "ville": "",
+   "pays": "US",
+   "codec": "MP3",
+   "debit": 320,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-497b0ca0-648a-4a71-86db-7e3425921ed3",
+   "n": "FlavorJamz Radio",
+   "urls": [
+    "https://stream.flavorjamz.com/stream.mp3"
+   ],
+   "site": "https://flavorjamz.com/radio",
+   "favicon": "https://flavorjamz.com/images/RadioLogo.png",
+   "votes": 0,
+   "tags": [
+    "afrobeats",
+    "amapiano",
+    "bouyon",
+    "calypso",
+    "caribbean"
+   ],
+   "ville": "",
+   "pays": "US",
+   "codec": "MP3",
+   "debit": 320,
+   "ok": "2026-10-21T04:43:23.881Z"
+  },
+  {
+   "id": "rb-7046be69-ea5c-43fb-8e20-3c4715911ac0",
+   "n": "NRG Radio345",
+   "urls": [
+    "https://das-edge16-live365-dal02.cdnstream.com/a95088"
+   ],
+   "site": "https://nrgradio345.com/",
+   "favicon": "",
+   "votes": 0,
+   "tags": [
+    "afrobeats",
+    "afrohouse",
+    "amapiano",
+    "caribbean",
+    "dancehall"
+   ],
+   "ville": "grand cayman island",
+   "pays": "KY",
+   "codec": "MP3",
+   "debit": 192,
+   "ok": "2026-10-21T04:43:23.881Z"
+  }
+ ]
+}
