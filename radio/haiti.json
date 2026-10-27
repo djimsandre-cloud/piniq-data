@@ -1,6 +1,6 @@
 {
- "maj": "2026-10-26T19:24:19.420Z",
- "testees": 81,
+ "maj": "2026-10-27T00:34:17.622Z",
+ "testees": 103,
  "fixes": {
   "caraibes": {
    "urls": [
@@ -156,7 +156,7 @@
    ],
    "site": "http://www.bbcnewshaiti.com/",
    "favicon": "https://www.haytinews.com/wp-content/uploads/2023/08/cropped-drapeau-icone-180x180.png",
-   "votes": 2085,
+   "votes": 2086,
    "tags": [
     "musuc",
     "news"
@@ -165,7 +165,7 @@
    "pays": "HT",
    "codec": "AAC",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-3fb39881-cf61-11e8-a54a-52543be04c81",
@@ -182,7 +182,24 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
+  },
+  {
+   "id": "rb-9a2c072e-fda1-4b31-ae42-599fd6eb2902",
+   "n": "Caraibes FM",
+   "urls": [
+    "https://stream.zeno.fm/54k0v7x14neuv",
+    "https://stream.zeno.fm/avr8uenbm1duv"
+   ],
+   "site": "https://www.radiotelecaraibes.com/",
+   "favicon": "https://www.radiotelecaraibes.com/wp-content/uploads/2024/01/RTVC-Logo_Blanc.png",
+   "votes": 1124,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-bf6d4aec-27d6-4ae8-845e-00449488d947",
@@ -200,7 +217,24 @@
    "pays": "HT",
    "codec": "AAC",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
+  },
+  {
+   "id": "rb-784881e9-0835-4f41-8487-d5da19c709b9",
+   "n": "Radio St Charles FM",
+   "urls": [
+    "https://stream.zeno.fm/fd9kyc28dchvv",
+    "https://stream.zeno.fm/nb1wrc28dchvv"
+   ],
+   "site": "http://lejournaliste.centerblog.net/",
+   "favicon": "https://c.sd1.fr/favicon.png",
+   "votes": 631,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-07990ba9-401a-4059-b0fc-a01e873ba85c",
@@ -216,7 +250,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-25c64b81-7d1d-4f1f-aed6-03a312073341",
@@ -232,7 +266,63 @@
    "pays": "HT",
    "codec": "AAC+",
    "debit": 64,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
+  },
+  {
+   "id": "rb-2c833ee4-1104-40eb-92d6-994fc9b0edf9",
+   "n": "Ananda Marga Haiti",
+   "urls": [
+    "https://stream.zeno.fm/vm8mgn3eewzuv"
+   ],
+   "site": "https://www.anandamarga.org/haiti/",
+   "favicon": "",
+   "votes": 222,
+   "tags": [
+    "mantra",
+    "spiritual discourses"
+   ],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-27T00:34:17.622Z"
+  },
+  {
+   "id": "rb-f288200c-0093-4a5f-8aac-9e043879b7d9",
+   "n": "Radio Humilite",
+   "urls": [
+    "https://stream.zeno.fm/qhlllaz21cmuv"
+   ],
+   "site": "https://radio-humilite-2-3-4.e-monsite.com/",
+   "favicon": "https://static.e-monsite.com/manager/e-monsite.com/im/favicon.png",
+   "votes": 222,
+   "tags": [
+    "cultural news",
+    "gospel music",
+    "sports news"
+   ],
+   "ville": "carrefour",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-27T00:34:17.622Z"
+  },
+  {
+   "id": "rb-3d51e3ed-bea9-4b68-a935-378b96e4256c",
+   "n": "Radio Kiskeya",
+   "urls": [
+    "https://stream.zeno.fm/82q102t62neuv",
+    "https://stream.zeno.fm/g9rt79m32v5tv"
+   ],
+   "site": "https://zeno.fm/radio/radio-kiskeya/",
+   "favicon": "",
+   "votes": 214,
+   "tags": [],
+   "ville": "",
+   "pays": "HT",
+   "codec": "MP3",
+   "debit": 128,
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-48e1242a-45f8-4263-86bf-21d4886e42ab",
@@ -250,23 +340,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
-  },
-  {
-   "id": "rb-b63f7c1c-4851-4536-a559-92df0b7e95a5",
-   "n": "Radio Humilite",
-   "urls": [
-    "https://stream.zeno.fm/qhlllaz21cmuv"
-   ],
-   "site": "https://radio-humilite-2-3-4.e-monsite.com/",
-   "favicon": "https://static.e-monsite.com/manager/e-monsite.com/im/favicon.png",
-   "votes": 199,
-   "tags": [],
-   "ville": "Port-au-Prince",
-   "pays": "HT",
-   "codec": "MP3",
-   "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-26d6622a-bc5c-444f-bf89-9779df88b20a",
@@ -282,7 +356,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-4aac09d9-cc2b-4a3b-980b-1dbe02962bfd",
@@ -302,7 +376,7 @@
    "pays": "HT",
    "codec": "AAC",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-8cddbb0c-73e6-4290-b52b-fdf391e8abef",
@@ -320,7 +394,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-e74d44c2-8a56-40a5-883d-ba9e329a7c27",
@@ -338,7 +412,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-8fefe017-c849-4043-86a2-d42a16a24392",
@@ -354,7 +428,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 192,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-64f7fd84-fd02-4a27-acaa-98e264211d4a",
@@ -372,7 +446,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-137fa962-fb10-4286-894e-6e6ed780883c",
@@ -390,7 +464,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 64,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-b34a34e3-2fe2-4836-b906-f22c435b9cf6",
@@ -407,7 +481,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-f33d5e1c-6135-11ea-be63-52543be04c81",
@@ -423,7 +497,7 @@
    "pays": "",
    "codec": "MP3",
    "debit": 0,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-5d97af74-e4df-4ac4-bec4-002d26f1eadd",
@@ -439,7 +513,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-9090b5f8-a2d3-4774-ac27-776676632c06",
@@ -457,7 +531,7 @@
    "pays": "HT",
    "codec": "AAC+",
    "debit": 64,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-7e9e4c3f-9692-4c62-af52-6437ad9cbbc1",
@@ -479,7 +553,7 @@
    "pays": "GP",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-e4576123-9cb3-4371-a391-169a3e422a73",
@@ -495,7 +569,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 128,
-   "ok": "2026-10-26T11:15:31.597Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-033c7983-31f9-4470-a582-fa70dee478d3",
@@ -537,7 +611,7 @@
    "pays": "HT",
    "codec": "MP3",
    "debit": 192,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-ac-radionn3ktswcd9quv",
@@ -555,25 +629,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
-  },
-  {
-   "id": "rb-zeno-ananda-marga-haiti",
-   "n": "ANANDA MARGA HAITI",
-   "urls": [
-    "https://stream.zeno.fm/vm8mgn3eewzuv"
-   ],
-   "site": "https://zeno.fm/radio/ananda-marga-haiti/",
-   "favicon": "https://images.zeno.fm/R-FO1ql4SXu8VEN1kUjoTSwd-YZKR5DieHYrp6wcaKI/rs:fill:152:152/q:75/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ1EwT0RUcXdvTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ1FxTmFSc2drTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTY2MTc0MjMwNDAwMA",
-   "votes": 0,
-   "tags": [
-    "Religious"
-   ],
-   "ville": "",
-   "pays": "HT",
-   "codec": "",
-   "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-cross-fm-haiti",
@@ -591,7 +647,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-impact-fm-haiti-qwqn",
@@ -609,7 +665,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-infocompas-live-radio",
@@ -627,7 +683,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 112,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-la-brise-fm-feeling-la-brise",
@@ -645,7 +701,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-orchestre-tropicana-dhaiti-radio",
@@ -663,7 +719,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radioadventistebethanie",
@@ -681,7 +737,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 80,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-canalplushaiti",
@@ -698,8 +754,8 @@
    "ville": "",
    "pays": "HT",
    "codec": "",
-   "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "debit": 96,
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-cemes-haiti",
@@ -717,7 +773,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-rcm1047",
@@ -735,7 +791,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-galaxie",
@@ -753,7 +809,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 64,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-galaxie-tunein",
@@ -771,7 +827,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 64,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-ginen",
@@ -789,16 +845,16 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
-   "id": "rb-zeno-radio-kiskeya",
-   "n": "Radio Kiskeya",
+   "id": "rb-zeno-radio-ibo-98-5fm",
+   "n": "Radio Ibo 98.5 FM Haiti",
    "urls": [
-    "https://stream.zeno.fm/g9rt79m32v5tv"
+    "https://stream.zeno.fm/kaer8unxsv5tv"
    ],
-   "site": "https://zeno.fm/radio/radio-kiskeya/",
-   "favicon": "https://images.zeno.fm/pnTqaerv9W-LOSEolSfgW6Py352KpZx_YuXb1Ew9rec/rs:fill:152:152/q:75/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ0E0TEx3emdnTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ0FnSkdmaEFvTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTc4OTQ5NjM3MzAwMA",
+   "site": "https://zeno.fm/radio/radio-ibo-98-5fm/",
+   "favicon": "https://images.zeno.fm/JMCKh972S1Ms47g6m-J0oFRl7mDk6DwdIpZaGRPxGys/rs:fill:152:152/q:75/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ0E0TEx3emdnTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ0FnTHJSa0FvTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTY2MTUyODk0MTAwMA",
    "votes": 0,
    "tags": [
     "General"
@@ -807,7 +863,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-konpa-direk",
@@ -825,7 +881,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-la-voix-de-l-evangile",
@@ -843,7 +899,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-lakay-info-509",
@@ -861,7 +917,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-levanjilnxths1q2v7zuv",
@@ -879,7 +935,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-levekampe-hinche",
@@ -897,7 +953,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-lumiere-inter",
@@ -915,7 +971,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radiomega-haiti",
@@ -933,7 +989,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 64,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-melodi-k",
@@ -951,7 +1007,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 0,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radiometropole",
@@ -969,7 +1025,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 64,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-miracle-fm-haiti",
@@ -987,7 +1043,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 320,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-nationale-d-haiti-master-input-station",
@@ -1005,7 +1061,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-nirvanay88phu7w7eeuv",
@@ -1023,7 +1079,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 64,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-oxygene-haiti",
@@ -1041,7 +1097,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-shalom-haiti",
@@ -1058,26 +1114,8 @@
    "ville": "",
    "pays": "HT",
    "codec": "",
-   "debit": 320,
-   "ok": "2026-10-26T19:24:19.420Z"
-  },
-  {
-   "id": "rb-zeno-radio-st-charles-fm",
-   "n": "Radio St Charles FM",
-   "urls": [
-    "https://stream.zeno.fm/nb1wrc28dchvv"
-   ],
-   "site": "https://zeno.fm/radio/radio-st-charles-fm/",
-   "favicon": "https://images.zeno.fm/k7Q-oXHLkH9TfeJntz8EaKnWckZlmZDbAKob48KHY6k/rs:fill:152:152/q:75/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJRHd6NENFZ0FzTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJRHc3Nl9hdFFrTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTc3MzkwMjI2MTAwMA",
-   "votes": 0,
-   "tags": [
-    "General"
-   ],
-   "ville": "",
-   "pays": "HT",
-   "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-mvp-radio-haititpthezyhc3quv",
@@ -1095,7 +1133,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-tele-ginen",
@@ -1113,7 +1151,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-tele-haiti-telehaiti-com",
@@ -1131,7 +1169,7 @@
    "pays": "",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-tele-humilite",
@@ -1149,7 +1187,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-tele-ideal-pdp-master-input-station-app",
@@ -1167,7 +1205,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-tele-victoire",
@@ -1185,7 +1223,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 192,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-tele-zenith",
@@ -1195,24 +1233,6 @@
    ],
    "site": "https://zeno.fm/radio/radio-tele-zenith/",
    "favicon": "https://images.zeno.fm/_WDulKjCH1ztcrnxc-XnJUKuYbUu705O-yeWN6OIom4/rs:fill:152:152/q:75/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ0E0TEx3emdnTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ0FnUENnamdvTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTY2NzQxMDA1NjAwMA",
-   "votes": 0,
-   "tags": [
-    "News/Talk"
-   ],
-   "ville": "",
-   "pays": "HT",
-   "codec": "",
-   "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
-  },
-  {
-   "id": "rb-zeno-RadioTelevisionCaraibes",
-   "n": "Radio Television Caraibes ( RTVC )",
-   "urls": [
-    "https://stream.zeno.fm/avr8uenbm1duv"
-   ],
-   "site": "https://zeno.fm/radio/RadioTelevisionCaraibes/",
-   "favicon": "https://images.zeno.fm/Cijo_ismLPsnCqjJam6DxRAXvsVC5GDgdP9jc6XdWnQ/rs:fill:152:152/q:75/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ0FnUDdLdmdvTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ0F3THlia0FvTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTc4NTg3MzczNzAwMA",
    "votes": 0,
    "tags": [
     "News/Talk"
@@ -1239,7 +1259,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-timoun-lcnow",
@@ -1257,7 +1277,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 192,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-express-konpa",
@@ -1275,7 +1295,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-vision-2000-sud-est",
@@ -1293,7 +1313,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radio-voix-de-l-esperance",
@@ -1311,7 +1331,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radyokanaval",
@@ -1329,7 +1349,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radyo-pep-la-99-1",
@@ -1347,7 +1367,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-radyo-tele-pwofonde-ayiti-rtpa",
@@ -1365,7 +1385,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-regard-fm-92-7",
@@ -1383,7 +1403,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-rve-haiti",
@@ -1401,7 +1421,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-tlr-news-talk",
@@ -1419,7 +1439,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 80,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   },
   {
    "id": "rb-zeno-vouzan-fm",
@@ -1437,7 +1457,7 @@
    "pays": "HT",
    "codec": "",
    "debit": 128,
-   "ok": "2026-10-26T19:24:19.420Z"
+   "ok": "2026-10-27T00:34:17.622Z"
   }
  ]
 }
