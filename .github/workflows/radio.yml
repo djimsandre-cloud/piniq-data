@@ -1,4 +1,4 @@
-# Trois fois par jour : radios d'Haïti qui jouent vraiment dans RadioPam (radio/haiti.json)
+# Trois fois par jour : radios d'Haïti qui jouent vraiment dans Medyapam (radio/haiti.json)
 name: Radios d'Haïti
 on:
   schedule:
@@ -17,7 +17,7 @@ jobs:
           node-version: 22
       - run: node radio.mjs
       - run: |
-          git config user.name "RadioPam robot"
+          git config user.name "Medyapam robot"
           git config user.email "robot@users.noreply.github.com"
           git add radio/
           git diff --cached --quiet || git commit -m "Radios d'Haïti"

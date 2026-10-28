@@ -1,4 +1,4 @@
-# Toutes les heures : PinIQ, Popote & Co, An Nou Alé, KrediCash, BudSnap, Séré'l byen, SmartCode, Salle de jeux, RadioPam et le tableau de bord répondent-ils ? Sinon, alerte ntfy (chaque appli sur son propre sujet)
+# Toutes les heures : PinIQ, Popote & Co, An Nou Alé, KrediCash, BudSnap, Séré'l byen, SmartCode, Salle de jeux, Medyapam et le tableau de bord répondent-ils ? Sinon, alerte ntfy (chaque appli sur son propre sujet)
 name: Gardien des applis
 on:
   schedule:
@@ -28,7 +28,7 @@ jobs:
           Séré'l byen|https://serel-byen-2026.web.app/|Séré|caddybook-d4535629da
           SmartCode|https://smartcode-3cf3d.web.app/|SmartCode|caddybook-d4535629da
           Salle de jeux|https://salle-de-jeux-2026.web.app/|Salle de jeux|caddybook-d4535629da
-          RadioPam|https://radiopam.web.app/|RadioPam|caddybook-d4535629da
+          Medyapam|https://medyapam.web.app/|Medyapam|caddybook-d4535629da
           Tableau de bord|https://djims-tableau.web.app/|Tableau de bord|caddybook-d4535629da
           LISTE
           exit $echec

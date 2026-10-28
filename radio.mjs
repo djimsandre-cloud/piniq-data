@@ -1,4 +1,4 @@
-// Robot des radios d'Haïti pour RadioPam — © D'jims ANDRÉ · Tous droits réservés
+// Robot des radios d'Haïti pour Medyapam — © D'jims ANDRÉ · Tous droits réservés
 // Plusieurs fois par jour : récupère toutes les radios d'Haïti et de la diaspora dans l'annuaire libre Radio Browser,
 // essaie VRAIMENT chaque flux (le son doit arriver), et ne garde que ceux qui se lisent DANS l'appli :
 // liens sécurisés (https), formats lus par le téléphone (MP3, AAC, Ogg/Opus). Un lien « http » est retenté en « https ».
@@ -8,7 +8,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 
 const SORTIE = "radio/haiti.json", GARDE = 3 * 864e5, MAINTENANT = Date.now();
 const ANNUAIRES = ["https://de1.api.radio-browser.info", "https://fr1.api.radio-browser.info", "https://nl1.api.radio-browser.info", "https://at1.api.radio-browser.info"];
-const UA = "Mozilla/5.0 (Linux; Android 14; Pixel) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36 RadioPam-robot";
+const UA = "Mozilla/5.0 (Linux; Android 14; Pixel) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36 Medyapam-robot";
 const sommeil = ms => new Promise(r => setTimeout(r, ms));
 const norm = n => String(n || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]/g, "");
 
@@ -106,7 +106,7 @@ async function zeno(){
   return trouves;
 }
 
-// Stations de la liste fixe de RadioPam : on vérifie leur lien, et on leur trouve des liens de secours
+// Stations de la liste fixe de Medyapam : on vérifie leur lien, et on leur trouve des liens de secours
 const FIXES = [
   { id: "caraibes", q: "Caraibes", c: "HT", url: "https://stream.zeno.fm/54k0v7x14neuv" }, { id: "scoop", q: "Scoop FM", c: "HT" },
   { id: "rtvs", q: "Supreme", c: "HT", url: "https://stream.zeno.fm/bdkwbv3rt98uv" }, { id: "intermix", q: "Intermix", c: "HT" }, { id: "rhai", q: "RHAI", c: "HT" },
