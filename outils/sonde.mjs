@@ -13,16 +13,8 @@ async function flux(nom, u) {
   const auteurs = [...new Set(items.map((i) => txt((i.match(/<dc:creator>([\s\S]*?)<\/dc:creator>/) || i.match(/<author>([\s\S]*?)<\/author>/) || [])[1] || "")).filter(Boolean))].slice(0, 8);
   out.push(`${nom} :: ${u} :: HTTP ${st} :: ${items.length} éléments :: texte=${txt(c).length} car. :: résumé=${txt(d).length} car. :: titre=${txt((it.match(/<title[^>]*>([\s\S]*?)<\/title>/) || [])[1]).slice(0, 70)} :: auteurs=${auteurs.join(", ")}`);
 }
-await flux("AlterPresse", "https://www.alterpresse.org/spip.php?page=backend");
-await flux("AlterPresse (2)", "https://www.alterpresse.org/spip.php?page=backend-simple");
-await flux("AyiboPost", "https://www.ayibopost.com/feed/");
-await flux("AyiboPost (2)", "https://ayibopost.com/rss/");
-await flux("AyiboPost (3)", "https://www.ayibopost.com/?feed=rss2");
-await flux("Le Nouvelliste", "https://lenouvelliste.com/rss");
-await flux("RFI Amériques", "https://www.rfi.fr/fr/am%C3%A9riques/rss");
-await flux("RFI Haïti", "https://www.rfi.fr/fr/tag/ha%C3%AFti/rss");
-await flux("Radio-Canada Haïti", "https://ici.radio-canada.ca/rss/4159");
-for (const [nom, u] of [["Geffrard (Nouvelliste)", "https://lenouvelliste.com/auteur/robenson-geffrard"], ["Amélie Baron (RFI)", "https://www.rfi.fr/fr/auteur/am%C3%A9lie-baron/"], ["X Le Nouvelliste", "https://x.com/LeNouvelliste"], ["Nitter", "https://nitter.net/LeNouvelliste/rss"]]) {
+{ const [st, x] = await lire("https://www.rfi.fr/fr/tag/ha%C3%AFti/rss"); out.push("RFI Haïti, articles d'Amélie Baron : " + (x.match(/Amélie Baron/g) || []).length); }
+for (const [nom, u] of [["Geffrard (Nouvelliste)", "https://lenouvelliste.com/auteur/robenson-geffrard"], ["Amélie Baron (RFI)", "https://www.rfi.fr/fr/auteur/am%C3%A9lie-baron/"], ["X Le Nouvelliste", "https://x.com/LeNouvelliste"], ["Nitter", "https://nitter.net/LeNouvelliste/rss"], ["X embed", "https://syndication.twitter.com/srv/timeline-profile/screen-name/LeNouvelliste"], ["AlterPresse accueil", "https://www.alterpresse.org/"], ["AyiboPost accueil", "https://www.ayibopost.com/"]]) {
   const [st, x] = await lire(u); const rss = (x.match(/<link[^>]+(rss|atom)\+xml[^>]+href="([^"]+)"/i) || [])[2] || "";
   out.push(`${nom} :: HTTP ${st} :: ${x.length} car. :: flux annoncé=${rss} :: titre=${txt((x.match(/<title>([\s\S]*?)<\/title>/) || [])[1]).slice(0, 70)}`);
 }
