@@ -1,14 +1,13 @@
-// Sonde temporaire : la recherche YouTube est-elle lisible sans clé ?
+// Sonde temporaire : identifiants des chaînes de médias + recherche « haiti » dans une chaîne
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
-async function chercher(q, sp) {
-  const r = await fetch(`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}&sp=${sp}&hl=fr&gl=FR`, { headers: { "User-Agent": UA, "Accept-Language": "fr-FR,fr;q=0.9", Cookie: "SOCS=CAI; CONSENT=YES+1" } });
-  const t = await r.text(); const m = t.match(/var ytInitialData = (\{[\s\S]*?\});<\/script>/);
-  if (!m) return { statut: r.status, taille: t.length, erreur: "pas de données", debut: t.slice(0, 200).replace(/\s+/g, " ") };
-  const out = []; const voir = (o) => { if (!o || typeof o !== "object") return; if (o.videoRenderer) { const v = o.videoRenderer; out.push({ id: v.videoId, titre: (v.title?.runs || []).map((x) => x.text).join(""), chaine: v.ownerText?.runs?.[0]?.text, chId: v.ownerText?.runs?.[0]?.navigationEndpoint?.browseEndpoint?.browseId, quand: v.publishedTimeText?.simpleText, duree: v.lengthText?.simpleText, vues: v.viewCountText?.simpleText, desc: (v.detailedMetadataSnippets?.[0]?.snippetText?.runs || []).map((x) => x.text).join("").slice(0, 80) }); return; } for (const k in o) voir(o[k]); };
-  voir(JSON.parse(m[1])); return { statut: r.status, n: out.length, out };
+const lire = async (u) => { const r = await fetch(u, { headers: { "User-Agent": UA, "Accept-Language": "fr-FR,fr;q=0.9", Cookie: "SOCS=CAI; CONSENT=YES+1" } }); const t = await r.text(); const m = t.match(/var ytInitialData = (\{[\s\S]*?\});<\/script>/); return m ? JSON.parse(m[1]) : null; };
+const trouver = (o, cle, out = []) => { if (!o || typeof o !== "object") return out; if (o[cle]) out.push(o[cle]); for (const k in o) trouver(o[k], cle, out); return out; };
+const NOMS = ["FRANCE 24", "FRANCE 24 English", "FRANCE 24 Español", "RFI", "TV5MONDE Info", "TV5MONDE", "AJ+ français", "africanews (en français)", "DW News", "DW Français", "DW Español", "BBC News", "BBC News Afrique", "Al Jazeera English", "ARTE", "Le Monde", "franceinfo", "euronews (en français)", "Radio-Canada Info", "RTS Info", "RTBF Info", "CNN", "CNN en Español", "Reuters", "Associated Press", "NBC News", "ABC News", "CBS News", "PBS NewsHour", "Democracy Now!", "Guardian News", "Sky News", "Brut", "Le Figaro", "LCI", "BFMTV", "TF1 INFO", "Mediapart", "Courrier international", "Public Sénat", "C dans l'air", "TRT Français", "VOA Afrique", "The New York Times", "VICE News", "CBC News", "Noticias Telemundo", "Univision Noticias", "EL PAÍS", "Le Parisien", "L'Obs", "Libération", "France Culture", "Le Média", "Blast, Le souffle de l'info", "Miami Herald", "NPR", "Vox", "Channel 4 News", "Al Jazeera Arabic", "CGTN Français", "TV5 Québec", "ICI Radio-Canada", "TVA Nouvelles", "LaPresse", "Le Devoir", "Noticias SIN"];
+for (const nom of NOMS) {
+  try { const d = await lire(`https://www.youtube.com/results?search_query=${encodeURIComponent(nom)}&sp=EgIQAg%3D%3D&hl=fr&gl=FR`);
+    const c = trouver(d, "channelRenderer").slice(0, 2).map((c) => `${c.title?.simpleText} | ${c.channelId} | ${c.videoCountText?.simpleText || c.subscriberCountText?.simpleText || ""} | ${(c.ownerBadges || []).length ? "vérifiée" : "-"}`);
+    console.log(`CH ${nom} => ${c.join("  ///  ") || "rien"}`); } catch (e) { console.log(`CH ${nom} => erreur ${e.message}`); }
 }
-for (const [q, sp] of [["Haïti", "CAISBAgCEAE%3D"], ["Haiti actualités", "CAISBAgCEAE%3D"], ["Ayiti", "CAISBAgCEAE%3D"], ["Haïti", "EgIIAg%3D%3D"]]) {
-  const r = await chercher(q, sp);
-  console.log(`\n=== ${q} (${sp}) statut ${r.statut} · ${r.n ?? r.erreur} ${r.debut || ""}`);
-  for (const v of (r.out || []).slice(0, 25)) console.log(` ${v.id} | ${v.quand} | ${v.duree} | ${v.vues} | ${v.chaine} (${v.chId}) | ${v.titre.slice(0, 90)}`);
-}
+const d = await lire("https://www.youtube.com/channel/UCCCPCZNChQdGa9EkATeye4g/search?query=haiti&hl=fr&gl=FR");
+const v = trouver(d, "videoRenderer"); console.log("RECHERCHE DANS FRANCE 24 :", v.length);
+for (const x of v.slice(0, 12)) console.log(` ${x.videoId} | ${x.publishedTimeText?.simpleText} | ${x.lengthText?.simpleText} | ${(x.title?.runs || []).map((r) => r.text).join("").slice(0, 80)} | desc ${(x.descriptionSnippet?.runs || []).map((r) => r.text).join("").slice(0, 60)}`);
