@@ -4,8 +4,8 @@ t0 = time.time(); subprocess.run([sys.executable, "-m", "pip", "install", "-q", 
 import ctranslate2, sentencepiece as spm
 idx = json.load(urllib.request.urlopen("https://raw.githubusercontent.com/argosopentech/argospm-index/main/index.json", timeout=30))
 MOD = {}
-for a in ("en", "es"):
-    p = sorted([x for x in idx if x["from_code"] == a and x["to_code"] == "fr"], key=lambda x: x["package_version"])[-1]
+for a, vers in (("en", "fr"), ("es", "en")):
+    p = sorted([x for x in idx if x["from_code"] == a and x["to_code"] == vers], key=lambda x: x["package_version"])[-1]
     t0 = time.time(); b = urllib.request.urlopen(urllib.request.Request(p["links"][0], headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
     zipfile.ZipFile(io.BytesIO(b)).extractall(f"mod/{a}"); d = glob.glob(f"mod/{a}/*")[0]
     print(f"MODELE {a}→fr v{p['package_version']} {len(b)//1_000_000} Mo en {time.time()-t0:.0f} s · {p['links'][0]} · contenu : {sorted(os.listdir(d))} / {sorted(os.listdir(d+'/model'))[:8]}")
@@ -16,7 +16,8 @@ def traduire(t, a):
     tr, sp, d = MOD[a]; ph = phrases(t)
     toks = [sp.encode(p, out_type=str) for p in ph]
     res = tr.translate_batch(toks, beam_size=2, max_decoding_length=256, repetition_penalty=1.1)
-    return " ".join(sp.decode(r.hypotheses[0]).replace("▁", " ").strip() for r in res)
+    out = " ".join(sp.decode(r.hypotheses[0]).replace("▁", " ").strip() for r in res)
+    return traduire(out, "en") if a == "es" else out      # l'espagnol passe par l'anglais (pas de modèle direct)
 EN = ["Haitian forces recapture national stadium after two years of gang control",
  "Salvadoran troops deployed in Haiti have retaken the Sylvio Cator stadium in Port-au-Prince, which had been under the control of armed gangs since 2024, the prime minister's office said on Thursday. Residents described hearing heavy gunfire through the night. \"We have been waiting for this for two years,\" said Marie, a street vendor who asked that her last name not be used.",
  "More than 1,000 people were killed in Haiti between July and September, according to a new UN report, which warns that gangs are expanding beyond the capital into the Artibonite and Centre departments. The report also documents a sharp rise in kidnappings and sexual violence."]
