@@ -1,0 +1,23 @@
+name: Sonde (temporaire)
+on: workflow_dispatch
+jobs:
+  sonde:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set +e
+          echo "== registre S3"; curl -sS -o reg.json -w "%{http_code} %{size_download}\n" https://bergamot.s3.amazonaws.com/models/index.json
+          python3 - <<'P'
+          import json
+          try:
+            d=json.load(open('reg.json'))
+            for k in ['enfr','fren','enes','esen']:
+              v=d.get(k); print(k, json.dumps(v)[:900] if v else None)
+          except Exception as e: print("pas de JSON", e, open('reg.json').read()[:300])
+          P
+          echo "== CORS S3"; curl -sS -I -H "Origin: https://medyapam.web.app" https://bergamot.s3.amazonaws.com/models/index.json | grep -i "access-control\|HTTP/"
+          echo "== registre GCS (sandbox)"; curl -sS -o reg2.json -w "%{http_code} %{size_download}\n" https://storage.googleapis.com/bergamot-models-sandbox/0.3.3/registry.json
+          python3 -c "import json;d=json.load(open('reg2.json'));print(list(d.keys())[:60]);[print(k, json.dumps(d[k])[:700]) for k in ['enfr','fren','enes','esen'] if k in d]" || head -c 300 reg2.json
+          echo "== CORS GCS"; curl -sS -I -H "Origin: https://medyapam.web.app" https://storage.googleapis.com/bergamot-models-sandbox/0.3.3/registry.json | grep -i "access-control\|HTTP/"
+          echo "== GitHub firefox-translations-models"; curl -sS https://api.github.com/repos/mozilla/firefox-translations-models/contents/models | python3 -c "import sys,json;d=json.load(sys.stdin);print([x['name'] for x in d] if isinstance(d,list) else d)"
+          for t in prod base-memory tiny base; do for p in enfr fren enes esen; do curl -sS https://api.github.com/repos/mozilla/firefox-translations-models/contents/models/$t/$p | python3 -c "import sys,json;d=json.load(sys.stdin);print('$t/$p', [(x['name'],x['size']) for x in d] if isinstance(d,list) else '-')"; done; done
